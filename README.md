@@ -1,6 +1,6 @@
 # [Essentials](https://jacobxperez.github.io/essentials/)
 
-The Essentials is a Base CSS stylesheet that includes only the essentials for starting a websitee.
+Base CSS stylesheet that includes only the essentials for starting a website.
 
 ## Project Status
 
@@ -42,7 +42,7 @@ The [Essentials](https://jacobxperez.github.io/essentials/) is build on [LESS](h
 
 ## Contributing
 
-Help us make [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, features requests and submitting pull requests.
+Help us make the [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, features requests and submitting pull requests.
 
 ### Bug reports
 
