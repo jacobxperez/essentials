@@ -127,13 +127,13 @@ hr {
 }
 
 ::-moz-selection {
-	background-color: #c0efb0;
+	background-color: #c9deff;
 	color: #000000;
 	text-shadow: none;
 }
 
 ::selection {
-	background-color: #c0efb0;
+	background-color: #c9deff;
 	color: #000000;
 	text-shadow: none;
 }
@@ -261,7 +261,7 @@ code {
 pre {
 	margin-bottom: 1.5rem;
 	padding: 0.5em 0.875em 0.5em 0.875em;
-	white-space: pre-line;
+	white-space: pre-wrap;
 	word-wrap: break-word;
 	overflow: auto;
 	background-color: #e6e6e6;
@@ -408,10 +408,21 @@ html input[disabled] {
 	min-width: 20em;
 	max-width: 61.25em;
 	margin: 0 auto;
-	padding-top: 1.25em;
-	padding-bottom: 2.5em;
 	padding-left: 1.25em;
 	padding-right: 1.25em;
+}
+
+body > .container:first-child {
+	padding-top: 1.25em;
+}
+
+body > .container:last-child {
+	padding-bottom: 2.5em;
+}
+
+body > .container:only-child {
+	padding-top: 1.25em;
+	padding-bottom: 2.5em;
 }
 
 .large-grid,
