@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="INDEX, FOLLOW">
+	<meta name="description" content="A visual guide to all elements.">
+	<meta name="author" content="Jacob Perez">
+	<title>Essentials - Layout</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<header class="container">
+		<h1 id="Essentials"><a href="https://jacobxperez.github.io/essentials/">Essentials</a></h1>
+
+		<nav class="medium-grid">
+			<div class="span-3 columns">
+				<p>
+					<a href="https://jacobxperez.github.io/essentials/">Getting Started</a>
+					<br> <small>Get started with Essentials</small>
+				</p>
+			</div>
+			<div class="span-3 columns">
+				<p>
+					<a href="https://jacobxperez.github.io/essentials/style-guide/">Style Guide</a>
+					<br> <small>A visual guide to all elements</small>
+				</p>
+			</div>
+			<div class="span-3 columns">
+				<p>
+					<strong>Layout</strong>
+					<br> <small>Responsive Grid System</small>
+				</p>
+			</div>
+			<div class="span-3 columns">
+				<p>
+					<a href="https://github.com/jacobxperez/essentials/archive/master.zip">Try It Out!</a>
+					<br> <small>Start using the Essentials</small>
+				</p>
+			</div>
+		</nav>
+
+		<hr>
+	</header>
+
+	<main class="container">
+		<div class="large-grid">
+			<nav class="span-3 columns">
+				<p><strong>On this page</strong></p>
+
+				<ul>
+					<li>
+						<a href="#layout">Layout</a>
+					</li>
+					<li>
+						<a href="#container">Container</a>
+					</li>
+					<li>
+						<a href="#grid-system">Grid System</a>
+					</li>
+				</ul>
+			</nav>
+
+			<article class="span-9 columns">
+				<h1 id="layout">Layout</h1>
+
+				<p>Grids are the base structure of layout and the most essential tools for organizing information on the web. When done correctly the grid creates order, balance, and harmony to any website.</p>
+
+				<section>
+					<h2 id="container">Container</h2>
+
+					<p>The first piece for wrapping the page is the <code>.container</code></p>
+
+					<pre>&lt;div class=&quot;container&quot;&gt;
+    &lt;&#33;&#45;&#45; Content here &#45;&#45;&gt;
+&lt;/div&gt;</pre>
+
+					<p>Multiple <code>.container</code> can also be included on any single page.</p>
+
+					<pre>&lt;header class=&quot;container&quot;&gt;
+    &lt;&#33;&#45;&#45; Header content &#45;&#45;&gt;
+&lt;/header&gt;
+
+&lt;main class=&quot;container&quot;&gt;
+    &lt;&#33;&#45;&#45; Main content &#45;&#45;&gt;
+&lt;/main&gt;
+
+&lt;footer class=&quot;container&quot;&gt;
+    &lt;&#33;&#45;&#45; Footer content &#45;&#45;&gt;
+&lt;/footer&gt;</pre>
+				</section>
+
+				<section>
+					<h2 id="grid-system">Grid System</h2>
+
+					<p>The twelve-column grid offers the greatest flexibility for organizing information on the web, that it has become an essential tool for every web designer.</p>
+
+					<section>
+						<h3>Wrapping</h3>
+
+						<p>There are three options for wrapping the grid, the <code>.large-grid</code>, <code>.medium-grid</code> and the <code>.small-grid</code>. Each being a different tier for making responsive layouts.</p>
+
+						<p><strong>Large Grid</strong></p>
+
+						<pre>&lt;div class=&quot;large-grid&quot;&gt;
+    &lt;&#33;&#45;&#45; Columns here &#45;&#45;&gt;
+&lt;/div&gt;</pre>
+
+						<p><strong>Medium Grid</strong></p>
+
+						<pre>&lt;div class=&quot;medium-grid&quot;&gt;
+    &lt;&#33;&#45;&#45; Columns here &#45;&#45;&gt;
+&lt;/div&gt;</pre>
+
+						<p><strong>Small Grid</strong></p>
+
+						<pre>&lt;div class=&quot;small-grid&quot;&gt;
+    &lt;&#33;&#45;&#45; Columns here &#45;&#45;&gt;
+&lt;/div&gt;</pre>
+					</section>
+
+					<section>
+						<h3>Columns</h3>
+
+						<p>Because the tire of the grid is declared with the wrapper all you need to do is to specify the number of columns the grid will <code>.span-#</code> and the finishing up with the <code>.columns</code> class.</p>
+
+						<pre>&lt;div class=&quot;large-grid&quot;&gt;
+    &lt;article class=&quot;span-8 columns&quot;&gt;
+        &lt;&#33;&#45;&#45; Content here &#45;&#45;&gt;
+    &lt;/article&gt;
+    
+    &lt;aside class=&quot;span-4 columns&quot;&gt;
+        &lt;&#33;&#45;&#45; Content here &#45;&#45;&gt;
+    &lt;/aside&gt;
+&lt;/div&gt;</pre>
+					</section>
+
+					<section>
+						<h3>Nesting</h3>
+
+						<p>You cannot nest grids indefinitely that would be absurd, instead try to follow the sequence.</p>
+
+						<pre>&lt;div class=&quot;large-grid&quot;&gt;
+    &lt;article class=&quot;span-12 columns&quot;&gt;
+        &lt;div class=&quot;medium-grid&quot;&gt;
+            &lt;article class=&quot;span-6 columns&quot;&gt;
+                &lt;div class=&quot;small-grid&quot;&gt;
+                    &lt;article class=&quot;span-3 columns&quot;&gt;
+                        &lt;&#33;&#45;&#45; Content here &#45;&#45;&gt;
+                    &lt;/article&gt;
+                    
+                    &lt;article class=&quot;span-3 columns&quot;&gt;
+                        &lt;&#33;&#45;&#45; Content here &#45;&#45;&gt;
+                    &lt;/article&gt;
+                &lt;/div&gt;
+            &lt;/article&gt;
+            
+            &lt;article class=&quot;span-6 columns&quot;&gt;
+                &lt;div class=&quot;small-grid&quot;&gt;
+                    &lt;article class=&quot;span-3 columns&quot;&gt;
+                        &lt;&#33;&#45;&#45; Content here &#45;&#45;&gt;
+                    &lt;/article&gt;
+                    
+                    &lt;article class=&quot;span-3 columns&quot;&gt;
+                        &lt;&#33;&#45;&#45; Content here &#45;&#45;&gt;
+                    &lt;/article&gt;
+                &lt;/div&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+    &lt;/article&gt;
+&lt;/div&gt;</pre>
+					</section>
+				</section>
+			</article>
+		</div>
+	</main>
+
+	<footer class="container">
+		<hr>
+
+		<p><small>&copy; 2017 <a href="https://github.com/jacobxperez" rel="author">Jacob Perez</a>, license <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="license">GPLv3</a>.</small></p>
+	</footer>
+</body>
+
+</html>
