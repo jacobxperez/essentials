@@ -98,8 +98,13 @@ figure {
 dd,
 ol,
 ul {
-	margin-bottom: 1.5rem;
 	padding-left: 2em;
+}
+
+dl,
+ol,
+ul {
+	margin-bottom: 1.5rem;
 	list-style-position: outside;
 }
 
@@ -362,14 +367,6 @@ button,
 select {
 	overflow: visible;
 	text-transform: none;
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-	-webkit-appearance: button;
-	cursor: pointer;
 }
 
 button[disabled],
