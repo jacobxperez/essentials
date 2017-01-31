@@ -2,7 +2,7 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5a11194dbf3f4b99a99ef47b92211bd9)](https://www.codacy.com/app/jacobxperez/essentials?utm_source=github.com&utm_medium=referral&utm_content=jacobxperez/essentials&utm_campaign=badger)
 
-Base CSS that includes only the essential.
+Base CSS that includes only the essential. The goal of this project is simple to identify the essential and eliminate the unnecessary, clearing you from the clutter so you can focus on the important.
 
 ## Project Status
 
@@ -21,7 +21,7 @@ Start by **[downloading](https://github.com/jacobxperez/essentials/archive/maste
 
 	git clone https://github.com/jacobxperez/essentials.git
 
-*Keep in mind that this project is under active development and no stable version has been release yet.*
+*Keep in mind that this project is under active development and no stable version has been release.*
 
 ### Default Build
 
