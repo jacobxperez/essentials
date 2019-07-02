@@ -1,7 +1,10 @@
 # [Essentials](https://jacobxperez.github.io/essentials/)
 
+<<<<<<< HEAD
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5a11194dbf3f4b99a99ef47b92211bd9)](https://www.codacy.com/app/jacobxperez/essentials?utm_source=github.com&utm_medium=referral&utm_content=jacobxperez/essentials&utm_campaign=badger)
 
+=======
+>>>>>>> refs/remotes/origin/master
 Base CSS that includes only the essential.
 
 ## Table of Contents
@@ -9,6 +12,7 @@ Base CSS that includes only the essential.
 * [Project Status](#project-status)
 * [Getting Started](#getting-started)
 * [Contributing](#contributing)
+* [Design Principles](#design-principles)
 * [LICENSE](#license)
 
 ## Project Status
@@ -26,11 +30,17 @@ Start by **[downloading](https://github.com/jacobxperez/essentials/archive/maste
 ### Default Build
 
 The easiest way to include the [Essentials](https://jacobxperez.github.io/essentials/) into your projects is by copying the pre-compiled CSS file into your project folder, and then link to it in HTML.
+<<<<<<< HEAD
+=======
 
-* css/style.css
+* [css/style.css](https://github.com/jacobxperez/essentials/blob/master/css/style.css)
+>>>>>>> refs/remotes/origin/master
 
-### Custom build
+### Custom Build
 
+[Essentials](https://jacobxperez.github.io/essentials/) is build on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) for compiling all necessary modules for your website and [settings.less](https://github.com/jacobxperez/essentials/blob/master/css/less/settings.less) for adjusting the values of fonts, colors, padding and more.
+
+<<<<<<< HEAD
 The [Essentials](https://jacobxperez.github.io/essentials/) is build on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use **style.less** for compiling all necessary modules for your website and **settings.less** for adjusting the values of fonts, colors, padding and more.
 
 * css/style.less (for compiling all LESS modules)
@@ -39,18 +49,64 @@ The [Essentials](https://jacobxperez.github.io/essentials/) is build on [LESS](h
 ## Contributing
 
 Help us make the [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, features requests and submitting pull requests.
+=======
+* [css/style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) (for compiling all LESS modules)
+* [css/less/settings.less](https://github.com/jacobxperez/essentials/blob/master/css/less/settings.less) (for changing the settings)
 
-### Bug reports
+All the main modules that builds [style.css](https://github.com/jacobxperez/essentials/blob/master/css/style.css) can be found under folder [core](https://github.com/jacobxperez/essentials/tree/master/css/less/core).
+
+* [css/less/core](https://github.com/jacobxperez/essentials/tree/master/css/less/core)
+	* [reset](https://github.com/jacobxperez/essentials/tree/master/css/less/core/reset) (css reset)
+	* [layout](https://github.com/jacobxperez/essentials/tree/master/css/less/core/layout) (grid system)
+	* [utilities](https://github.com/jacobxperez/essentials/tree/master/css/less/core/utilities) (alignment and other tools)
+	* [mixins](https://github.com/jacobxperez/essentials/tree/master/css/less/core/mixins) (LESS mixins)
+
+We recommend to leave all [core](https://github.com/jacobxperez/essentials/tree/master/css/less/core) modules untouched unless you have to, and instead add all custom code on top of it under folder [custom](https://github.com/jacobxperez/essentials/tree/master/css/less/custom) then link to them on file [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) for compiling.
+
+* [css/less/custom](https://github.com/jacobxperez/essentials/tree/master/css/less/custom)
+	* [modules](https://github.com/jacobxperez/essentials/tree/master/css/less/custom/modules) (add custom modules here)
+	* [navigation](https://github.com/jacobxperez/essentials/tree/master/css/less/custom/navigation) (add custom navigation here)
+
+*By default Essentials has no predefine navigation, use your own custom code.*
+
+### Features
+
+* Fluid and responsive grid system
+* Minimal design with no decorative styles
+* No more pixels everything is set to relative units
+* Build on LESS with mixin library
+
+## Contributing
+
+Help us make the [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, features requests and submitting pull requests. Please read our [Design Principles](#design-principles) to better understand the nature and the direction of the project.
+>>>>>>> refs/remotes/origin/master
+
+### Bug Reports
 
 Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem? What would you expect to be the outcome? All these details will help us fix any potential bugs.
 
-### Feature requests
+### Feature Requests
 
 Before opening a feature request, please take a moment to find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible.
 
-### Pull requests
+### Pull Requests
 
-Please ask first before embarking on any significant pull request (e.g. implementing features, re-factoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project.
+Please ask first before embarking on any significant pull request (e.g. implementing features, re-factoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project. When contributing code to this project always ask yourself these questions.
+
+* Is it essential?
+* Will it add value?
+* Is this change necessary?
+
+## Design Principles
+
+Leo Babauta demonstrates in he's book The Power of Less how to streamline your life by identifying the essential and eliminating the unnecessary. By focusing on the essential and allowing everything else to drop away you will become less stressed and more productive.
+
+1. Identify the essential
+2. Eliminate the rest
+
+> Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
+>
+> Antoine de Saint-Exupery
 
 ## LICENSE
 

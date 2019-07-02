@@ -1,0 +1,223 @@
+// Global Styles
+// ----------------------------------------------------------------------------/
+
+// colors
+@base-color: #333;
+@base-background: #fff;
+@primary: #06f;
+@secondary: #804480;
+
+// margins
+@base-margin-y: 20px;
+@base-margin-x: 20px;
+
+// paddings
+@base-padding-y: 8px;
+@base-padding-x: 14px;
+
+// borders
+@base-border-width: 1px;
+@base-border-style: solid;
+@base-border-color: rgba(0, 0, 0, 0.3);
+@base-border-radius: 4px;
+
+
+// Typography
+// ----------------------------------------------------------------------------/
+
+// sans-serif
+@font-sans: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", FreeSans, sans-serif;
+
+// serif
+@font-serif: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", "Liberation Serif", FreeSerif, serif;
+
+// mono
+@font-mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", "Nimbus Mono L", "Liberation Mono", FreeMono, monospace;
+
+// font size
+@root-font-size: 16px;
+@base-font-size: 16px;
+
+// font family
+@base-font-family: @font-sans;
+
+// line height
+@base-line-height: 24px;
+
+// leading (margin bottom)
+@base-leading: @base-line-height;
+
+// font color
+@base-font-color: @base-color;
+
+// link
+@link-color: @primary;
+@link-decoration: none;
+@link-decoration-hover: underline;
+
+// indentation
+@indent: 32px;
+
+
+// Headings
+// ----------------------------------------------------------------------------/
+
+// headings
+@headings-font-family: inherit;
+@headings-font-weight: 700;
+
+// heading 1
+@h1-font-size: 47px;
+@h1-leading: @base-leading;
+@h1-line-height: 48px;
+
+// heading 2
+@h2-font-size: 33px;
+@h2-leading: @base-leading;
+@h2-line-height: 36px;
+
+// heading 3
+@h3-font-size: 23px;
+@h3-leading: @base-leading;
+@h3-line-height: 36px;
+
+// heading 4
+@h4-font-size: 16px;
+@h4-leading: @base-leading;
+@h4-line-height: @base-line-height;
+
+// heading 5
+@h5-font-size: 16px;
+@h5-leading: @base-leading;
+@h5-line-height: @base-line-height;
+
+// heading 6
+@h6-font-size: 16px;
+@h6-leading: @base-leading;
+@h6-line-height: @base-line-height;
+
+
+// Elements
+// ----------------------------------------------------------------------------/
+
+// small
+@small-font-size: 14px;
+
+// mark
+@mark-background: #ffff00;
+@mark-color: #000;
+
+// hr
+@hr-border-width: 2px;
+@hr-border-style: @base-border-style;
+@hr-border-color: @base-border-color;
+
+
+// Code
+// ----------------------------------------------------------------------------/
+@code-font-family: @font-mono;
+@code-background: #e6e6e6;
+@code-color: #555;
+
+
+// Pre
+// ----------------------------------------------------------------------------/
+@pre-white-space: pre;
+@pre-background: @code-background;
+@pre-color: @code-color;
+
+
+// Blockquote
+// ----------------------------------------------------------------------------/
+@blockquote-font-family: @font-serif;
+@blockquote-font-size: @h3-font-size;
+@blockquote-font-style: italic;
+@blockquote-leading: @h3-leading;
+
+
+// Table
+// ----------------------------------------------------------------------------/
+@table-cell-padding-y: @base-padding-y;
+@table-cell-padding-x: @base-padding-x;
+
+
+// Forms
+// ----------------------------------------------------------------------------/
+@form-padding-y: @base-padding-y;
+@form-padding-x: @base-padding-x;
+
+@form-border-color: @base-border-color;
+@form-border-color-focus: @link-color;
+@form-border-width: @base-border-width;
+
+
+// Button
+// ----------------------------------------------------------------------------/
+@button-class: button;
+@button-padding-y: @base-padding-y;
+@button-padding-x: @base-padding-x;
+
+@button-border-width: @base-border-width;
+@button-border-color: @base-border-color;
+@button-background: #eee;
+@button-color: @base-font-color;
+
+
+// Selection
+// ----------------------------------------------------------------------------/
+@selection-background: #c2daff;
+@selection-color: #000;
+
+
+// Container
+// ----------------------------------------------------------------------------/
+@container-padding: 20px;
+@container-padding-top: @container-padding * 2;
+@container-padding-bottom: @container-padding * 3;
+
+@container-min-width: (280px + (@container-padding * 2));
+@container-small-width: (640px + (@container-padding * 2));
+@container-medium-width: (800px + (@container-padding * 2));
+@container-max-width: (940px + (@container-padding * 2));
+
+
+
+// Grid System
+// ----------------------------------------------------------------------------/
+@grid-gutters: 10px;
+
+// small grid
+@small-prefix: small;
+@small-grid-columns: 4;
+
+// medium grid
+@medium-prefix: medium;
+@medium-grid-columns: 8;
+
+// large grid
+@large-prefix: large;
+@large-grid-columns: 12;
+
+
+// Breakpoints
+// ----------------------------------------------------------------------------/
+
+// small screen
+@small-max-width: 767px;
+@breakpoint-small-max: unit((@small-max-width / @root-font-size), em);
+
+// medium screen
+@medium-min-width: 768px;
+@medium-max-width: 979px;
+@breakpoint-medium-min: unit((@medium-min-width / @root-font-size), em);
+@breakpoint-medium-max: unit((@medium-max-width / @root-font-size), em);
+
+// large screen
+@large-min-width: 980px;
+@breakpoint-large-min: unit((@large-min-width / @root-font-size), em);
+
+
+// Scale Breakpoint
+// ----------------------------------------------------------------------------/
+@scale-min-width: 1600px;
+@breakpoint-scale-min: unit((@scale-min-width / @root-font-size), em);
