@@ -1,11 +1,6 @@
 # [Essentials](https://jacobxperez.github.io/essentials/)
 
-<<<<<<< HEAD
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5a11194dbf3f4b99a99ef47b92211bd9)](https://www.codacy.com/app/jacobxperez/essentials?utm_source=github.com&utm_medium=referral&utm_content=jacobxperez/essentials&utm_campaign=badger)
-
-=======
->>>>>>> refs/remotes/origin/master
-Base CSS that includes only the essential.
+Base CSS reset for layout and typography
 
 ## Table of Contents
 
