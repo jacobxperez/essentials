@@ -40,26 +40,13 @@ Start by **[downloading](https://github.com/jacobxperez/essentials/archive/maste
 ### Default Build
 
 The easiest way to include the [Essentials](https://jacobxperez.github.io/essentials/) into your projects is by copying the pre-compiled CSS file into your project folder, and then link to it in HTML.
-<<<<<<< HEAD
-=======
 
 * [css/style.css](https://github.com/jacobxperez/essentials/blob/master/css/style.css)
->>>>>>> refs/remotes/origin/master
 
 ### Custom Build
 
 [Essentials](https://jacobxperez.github.io/essentials/) is build on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) for compiling all necessary modules for your website and [settings.less](https://github.com/jacobxperez/essentials/blob/master/css/less/settings.less) for adjusting the values of fonts, colors, padding and more.
 
-<<<<<<< HEAD
-The [Essentials](https://jacobxperez.github.io/essentials/) is build on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use **style.less** for compiling all necessary modules for your website and **settings.less** for adjusting the values of fonts, colors, padding and more.
-
-* css/style.less (for compiling all LESS modules)
-* css/less/settings.less (for changing the settings)
-
-## Contributing
-
-Help us make the [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, features requests and submitting pull requests.
-=======
 * [css/style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) (for compiling all LESS modules)
 * [css/less/settings.less](https://github.com/jacobxperez/essentials/blob/master/css/less/settings.less) (for changing the settings)
 
@@ -88,8 +75,7 @@ To ensure future compatibility we recommend to leave all [core](https://github.c
 
 ## Contributing
 
-Help us make the [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, features requests and submitting pull requests. Please read our [Design Principles](#design-principles) to better understand the nature and the direction of the project.
->>>>>>> refs/remotes/origin/master
+Help us make [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, features requests and submitting pull requests. Please read our [Design Principles](#design-principles) to better understand the nature and the direction of the project.
 
 ### Bug Reports
 
