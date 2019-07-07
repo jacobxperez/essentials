@@ -1,3 +1,13 @@
+// Font Family
+// -----------------------------------------------------------------------------
+
+.font-family(@font-family) {
+	& when not (@font-family = off) {
+		font-family: @font-family;
+	}
+}
+
+
 // Font Face
 // -----------------------------------------------------------------------------
 
@@ -68,31 +78,5 @@
 	(@unit = rem) {
 		@a: unit((@text-indent / @base), @unit);
 		text-indent: @a;
-	}
-}
-
-
-// Color
-// -----------------------------------------------------------------------------
-
-.color (@color: @base-font-color; @amount: 6.5%; @switch: none) {
-	& when (@switch = none) {
-		color: @color;
-	}
-
-	& when (@switch = light) {
-		color: lighten(@color, @amount);
-	}
-
-	& when (@switch = dark) {
-		color: darken(@color, @amount);
-	}
-
-	& when (@switch = saturate) {
-		color: saturate(@color, @amount);
-	}
-
-	& when (@switch = desaturate) {
-		color: desaturate(@color, @amount);
 	}
 }

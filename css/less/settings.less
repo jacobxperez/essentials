@@ -1,12 +1,14 @@
 // Global Styles
 // common shared styles among selectors
+// always work on px and the mixins will output in relative units
+// variables with comment "can be set to off" will not output a style property
 // ----------------------------------------------------------------------------/
 
 // colors
 @base-color: #333;
 @base-background: #fff;
 @primary: #06f;
-@secondary: #804480;
+@secondary: #e6e6e6;
 
 // margins
 @base-margin-y: 20px;
@@ -17,7 +19,7 @@
 @base-padding-x: 14px;
 
 // borders
-@base-border-width: 1px;
+@base-border-width: 1px; // can be set to off
 @base-border-style: solid;
 @base-border-color: rgba(0, 0, 0, 0.3);
 @base-border-radius: 4px;
@@ -35,12 +37,12 @@
 // mono
 @font-mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", "Nimbus Mono L", "Liberation Mono", FreeMono, monospace;
 
+// font family
+@base-font-family: @font-sans;
+
 // font size
 @root-font-size: 16px;
 @base-font-size: 16px;
-
-// font family
-@base-font-family: @font-sans;
 
 // line height
 @base-line-height: 24px;
@@ -56,15 +58,25 @@
 @link-decoration: none;
 @link-decoration-hover: underline;
 
+// small
+@small-font-size: 14px;
+
+// mark
+@mark-background: #ffff00;
+@mark-color: #000;
+
+// hr
+@hr-border-width: 2px; // can be set to off
+@hr-border-style: @base-border-style;
+@hr-border-color: @base-border-color;
+
 // indentation
 @indent: 32px;
 
 
 // Headings
 // ----------------------------------------------------------------------------/
-
-// headings
-@headings-font-family: inherit;
+@headings-font-family: off;
 @headings-font-weight: 700;
 
 // heading 1
@@ -98,25 +110,18 @@
 @h6-line-height: @base-line-height;
 
 
-// Elements
+// Iconography
 // ----------------------------------------------------------------------------/
+@icon-font-path: "../fonts/icons/";
+@icon-font-name: "icons";
 
-// small
-@small-font-size: 14px;
-
-// mark
-@mark-background: #ffff00;
-@mark-color: #000;
-
-// hr
-@hr-border-width: 2px;
-@hr-border-style: @base-border-style;
-@hr-border-color: @base-border-color;
+@icon-font-size: 15px;
+@icon-line-height: 10px;
 
 
 // Code
 // ----------------------------------------------------------------------------/
-@code-font-family: @font-mono;
+@code-font-family: @font-mono; // can be set to off
 @code-background: #e6e6e6;
 @code-color: #555;
 
@@ -130,7 +135,7 @@
 
 // Blockquote
 // ----------------------------------------------------------------------------/
-@blockquote-font-family: @font-serif;
+@blockquote-font-family: @font-serif; // can be set to off
 @blockquote-font-size: @h3-font-size;
 @blockquote-font-style: italic;
 @blockquote-leading: @h3-leading;
@@ -147,9 +152,10 @@
 @form-padding-y: @base-padding-y;
 @form-padding-x: @base-padding-x;
 
+@form-border-width: @base-border-width; // can be set to off
 @form-border-color: @base-border-color;
 @form-border-color-focus: @link-color;
-@form-border-width: @base-border-width;
+@form-border-radius: @base-border-radius;
 
 
 // Button
@@ -158,10 +164,11 @@
 @button-padding-y: @base-padding-y;
 @button-padding-x: @base-padding-x;
 
-@button-border-width: @base-border-width;
-@button-border-color: @base-border-color;
-@button-background: #fff;
+@button-background: @secondary;
 @button-color: @base-font-color;
+@button-border-width: @base-border-width; // can be set to off
+@button-border-color: @base-border-color;
+@button-border-radius: @base-border-radius;
 
 
 // Selection
@@ -209,7 +216,7 @@
 
 
 // Breakpoints
-// Notice it's using wrapper widths to calculate breakpoints
+// notice it's using wrapper widths to calculate breakpoints
 // ----------------------------------------------------------------------------/
 
 // small screen
