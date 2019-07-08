@@ -6,10 +6,6 @@
 	Twitter: your Twitter username.
 	Location: City, Country.
 
-<<<<<<< HEAD
-	<name>	<role>	<twitter>
-=======
->>>>>>> refs/remotes/origin/master
 
 	[...]
 
