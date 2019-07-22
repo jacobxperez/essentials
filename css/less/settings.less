@@ -5,14 +5,14 @@
 // ----------------------------------------------------------------------------/
 
 // colors
-@font-color: #555;
 @background-color: #fff;
+@font-color: #555;
 @default: #e6e6e6;
 @primary: #06f;
 @secondary: #636;
-@danger: #f00;
-@warning: #ff0;
-@success: #0c0;
+@danger: #c00;
+@warning: #fc0;
+@success: #393;
 
 // margins
 @base-margin-y: 20px;
@@ -115,8 +115,9 @@
 
 // Iconography
 // ----------------------------------------------------------------------------/
-@icon-font-path: "../fonts/icons/";
+@icon-class: icon;
 @icon-font-name: "icons";
+@icon-font-path: "../fonts/icons/";
 
 @icon-font-size: 15px;
 @icon-line-height: 10px;
@@ -169,13 +170,15 @@
 
 @button-color: @font-color;
 @button-background: @default;
-@button-background-focus: darken(@button-background, 1%);
 @button-background-hover: lighten(@button-background, 3%);
 @button-background-active: darken(@button-background, 3%);
 
 @button-border-width: @base-border-width; // can be set to off
 @button-border-color: @base-border-color;
 @button-border-radius: @base-border-radius;
+
+@button-disabled-color: #8c8c8c;
+@button-disabled-background: #bebebe;
 
 
 // Selection
@@ -235,10 +238,3 @@
 
 // large screen
 @breakpoint-large-min: unit((@wrapper-large-max-width / @root-font-size), em);
-
-
-// Scale Breakpoint
-// at this point all elements will begin to scale up
-// ----------------------------------------------------------------------------/
-@scale-min-width: 1920px;
-@breakpoint-scale-min: unit((@scale-min-width / @root-font-size), em);
