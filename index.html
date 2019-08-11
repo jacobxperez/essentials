@@ -7,44 +7,72 @@
 	<meta name="robots" content="INDEX, FOLLOW">
 	<meta name="description" content="Base CSS that includes only the essential.">
 	<meta name="author" content="Jacob Perez">
-	<title>Base CSS Framework - Essentials</title>
+	<title>Base CSS framework - Essentials</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="top">
+	<!-- Navigation -->
+	<nav class="navbar">
+		<div class="container">
+			<a class="brand" href="#top">Essentials</a>
+
+			<ul class="nav hide-small">
+				<li><a href="#top">ReadMe</a></li>
+				<li><a href="/icons/">Icons</a></li>
+				<li><a href="https://github.com/jacobxperez/essentials">GitHub</a></li>
+				<li><a href="https://github.com/jacobxperez/essentials/archive/master.zip">Download</a></li>
+			</ul>
+
+			<ul class="nav hide-medium-up">
+				<li class="dropdown">
+					<a class="icon-menu"></a>
+
+					<ul class="menu">
+						<li><a href="#top">ReadMe</a></li>
+						<li><a href="/icons/">Icons</a></li>
+						<li><a href="https://github.com/jacobxperez/essentials">GitHub</a></li>
+						<li><a href="https://github.com/jacobxperez/essentials/archive/master.zip">Download</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- end Navigation -->
+
+	<header class="container">
+		<h1 id="Essentials">ReadMe</h1>
+
+		<p>Learn more about Essentials and how to get started.</p>
+
+		<hr>
+	</header>
+
 	<article class="container">
 		<div class="row">
-			<aside class="large-3 medium-2 columns">
-				<p>
-					<strong>Read Me</strong>
-				</p>
-
-				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#getting-started">Getting Started</a>
+			<nav class="large-3 medium-2 columns">
+				<ul class="nav-list">
+					<li class="nav-title">On this page</li>
+					<li><a class="nav-link" href="#about">About</a></li>
+					<li><a class="nav-link" href="#getting-started">Getting Started</a>
 						<ul>
-							<li><a href="#default-build">Default Build</a></li>
-							<li><a href="#custom-build">Custom Build</a></li>
+							<li><a class="nav-link" href="#default-build">Default Build</a></li>
+							<li><a class="nav-link" href="#custom-build">Custom Build</a></li>
 						</ul>
 					</li>
 					<li><a href="#contributing">Contributing</a>
 						<ul>
-							<li><a href="#bug-reports">Bug Reports</a></li>
-							<li><a href="#feature-requests">Feature Requests</a></li>
-							<li><a href="#pull-requests">Pull Requests</a></li>
+							<li><a class="nav-link" href="#bug-reports">Bug Reports</a></li>
+							<li><a class="nav-link" href="#feature-requests">Feature Requests</a></li>
+							<li><a class="nav-link" href="#pull-requests">Pull Requests</a></li>
 						</ul>
 					</li>
-					<li><a href="#design-principles">Design Principles</a></li>
-					<li><a href="#license">LICENSE</a></li>
+					<li><a class="nav-link" href="#design-principles">Design Principles</a></li>
+					<li><a class="nav-link" href="#license">LICENSE</a></li>
 				</ul>
-			</aside>
+			</nav>
 
 			<main class="large-9 medium-6 columns">
-				<header>
-					<h1 id="Essentials"><a href="https://jacobxperez.github.io/essentials/">Essentials</a></h1>
-
-					<p>Base CSS Framework — Built with LESS</p>
-				</header>
 				<h2 id="about">About</h2>
 
 				<p>Essentials is a base CSS framework build with <a href="http://lesscss.org/" rel="nofollow">LESS</a> a preprocessor that extends the capabilities of CSS with dynamic behavior such as variables, mixings, operations and functions.</p>
@@ -100,8 +128,6 @@
 					</li>
 				</ul>
 
-				<p><em>At this stage of development Essentials has no predefine navigation.</em></p>
-
 				<h2 id="contributing">Contributing</h2>
 
 				<p>Help us make <a href="https://jacobxperez.github.io/essentials/">Essentials</a> better for everyone, any contribution will be considered. Use the <a href="https://github.com/jacobxperez/essentials/issues">issue tracker</a> for
@@ -155,26 +181,25 @@
 					WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 					See the License for the specific language governing permissions and
 					limitations under the License.</p>
-
-					<footer>
-						<hr>
-
-						<p><small>&copy; 2019 <a href="https://github.com/jacobxperez/essentials">Essentials</a> by <a href="https://github.com/jacobxperez" rel="author">Jacob Perez</a> and licensed under the <a
-									href="http://www.apache.org/licenses/LICENSE-2.0" rel="license">Apache License v2.0</a>.</small></p>
-
-						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-						<script>
-							window.jQuery || document.write('<script src="js/lib/jquery-v3.4.1.js"><\/script>');
-
-						</script>
-
-						<script src="js/script.min.js"></script>
-					</footer>
-
 			</main>
 		</div>
 	</article>
+
+	<footer class="container">
+		<hr>
+
+		<p><small>&copy; 2019 <a href="https://github.com/jacobxperez/essentials">Essentials</a> by <a href="https://github.com/jacobxperez" rel="author">Jacob Perez</a> and licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0"
+					rel="license">Apache License v2.0</a>.</small></p>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script>
+			window.jQuery || document.write('<script src="js/lib/jquery-v3.4.1.js"><\/script>');
+
+		</script>
+
+		<script src="js/script.min.js"></script>
+	</footer>
 </body>
 
 </html>
