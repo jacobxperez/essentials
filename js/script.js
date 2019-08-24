@@ -1,33 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-	const getDropdown = $('.dropdown');
-	const getMenu = $('.menu');
+    // Variables
+    const getDropdown = document.querySelectorAll('.dropdown');
+    const getDropdownLength = getDropdown.length;
 
+    // Dropdown
+    for (var i = 0; i < getDropdownLength; i++) {
 
-	// 1 Dropdown Menu
-	getDropdown.each(function() {
-		$(this).on('click', function() {
-			$(this).children('.menu').slideToggle(500);
-		});
-	}); // end of dropdown menu
+        getDropdown[i].addEventListener('click', function(e) {
+            if (!this.classList.contains('drop')) {
 
+                e.stopPropagation();
+                this.classList.add('drop');
 
-	// 2 Smooth Scrolling on internal links
-	$('a[href*="#"]:not([href="#"])').click(function() {
-		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            } else if (this.classList.contains('drop')) {
 
-			// Hide menu on internal links
-			getMenu.slideUp(500);
+                e.stopPropagation();
+                this.classList.remove('drop');
 
-			if (target.length) {
-				$('html, body').animate({
-					scrollTop: target.offset().top
-				}, 1000);
-				return false;
-			}
-		}
-	}); // end Smooth Scrolling
+            }
+
+        });
+
+    };
+
+    // Hide dropdown on window click
+    document.addEventListener('click', function(e) {
+        // check if target is not dropdown
+        if (e.target != getDropdown) {
+
+            for (var i = 0; i < getDropdownLength; i++) {
+                // removes class drop from dropdown
+                getDropdown[i].classList.remove('drop');
+            };
+
+        }
+
+    });
 
 });
