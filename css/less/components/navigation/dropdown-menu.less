@@ -1,14 +1,18 @@
-// Dropdown Menu
+// Dropdown Menu V1.1
 // ----------------------------------------------------------------------------/
-.dropdown-menu {
-	background-color: lighten(#222, 2%);
+.navbar .dropdown-menu {
+	border: 0;
+	background-color: lighten(@navbar-background, 2%);
 	.text-shadow();
-	opacity: 0;
 
-	a {
+	.nav-link {
 		.padding-left(@wrapper-padding);
 		.padding-right(@wrapper-padding);
 	}
+}
+
+.dropdown-menu {
+	opacity: 0;
 }
 
 .drop > .dropdown-menu {

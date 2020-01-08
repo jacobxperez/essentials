@@ -1,19 +1,29 @@
-// Navigation
+// Navigation V2.0
 // -----------------------------------------------------------------------------
-
+.nav,
+.nav ul,
 .nav-list,
-.nav-inline {
+.nav-list ul,
+.nav-inline,
+.nav-inline ul {
+	padding-left: 0;
+	list-style-type: none;
+}
 
-	.active,
-	.nav-title {
-		font-weight: 700;
+.nav {
+	margin-bottom: 0;
+
+	> li {
+		float: left;
 	}
 
-	.nav-link:focus,
-	.nav-link:hover {
-		color: darken(@link-color, 20%);
+	> li:last-child {
+		.margin-right(-10px);
 	}
 
+	a {
+		.padding(10px);
+	}
 }
 
 .nav-inline {
@@ -30,4 +40,22 @@
 		.margin-bottom(@base-leading);
 	}
 
+}
+
+.nav-title {
+	font-weight: 700;
+}
+
+.nav-link {
+	display: block;
+}
+
+.active,
+.nav-link:focus,
+.nav-link:hover {
+	color: @nav-link-hover;
+}
+
+.nav-link:hover {
+	text-decoration: none;
 }
