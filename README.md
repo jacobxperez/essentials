@@ -5,14 +5,14 @@ Base CSS Framework — Built with LESS
 ## Table of Contents
 
 * [About](#about)
-	* [Project Status](#project-status)
+    * [Project Status](#project-status)
 * [Getting Started](#getting-started)
-	* [Default Build](#default-build)
-	* [Custom Build](#custom-build)
+    * [Default Build](#default-build)
+    * [Custom Build](#custom-build)
 * [Contributing](#contributing)
-	* [Bug Reports](#bug-reports)
-	* [Feature Requests](#feature-requests)
-	* [Pull Requests](#pull-requests)
+    * [Bug Reports](#bug-reports)
+    * [Feature Requests](#feature-requests)
+    * [Pull Requests](#pull-requests)
 * [Design Principles](#design-principles)
 * [LICENSE](#license)
 
@@ -28,7 +28,7 @@ Project under active development. **NO** stable version has been released.
 
 Start by **[downloading](https://github.com/jacobxperez/essentials/archive/master.zip)** the [repository](https://github.com/jacobxperez/essentials) or by cloning the project:
 
-	$ git clone https://github.com/jacobxperez/essentials.git
+    $ git clone https://github.com/jacobxperez/essentials.git
 
 *Keep in mind that this project is under active development and no stable version has been released.*
 
@@ -42,21 +42,20 @@ The easiest way to include [Essentials](https://jacobxperez.github.io/essentials
 
 [Essentials](https://jacobxperez.github.io/essentials/) is built on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) for compiling all necessary modules for your website and the [variable files](https://github.com/jacobxperez/essentials/blob/master/css/less/variables) for adjusting the values of fonts, colors, padding and more.
 
-* [/css/style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) (for compiling all LESS modules)
-* [/css/less/variables](https://github.com/jacobxperez/essentials/blob/master/css/less/variables) (for changing the settings)
+* [/css/style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less)
+* [/css/less/variables](https://github.com/jacobxperez/essentials/blob/master/css/less/variables)
 
-All main components and dependencies can be found under folder [core](https://github.com/jacobxperez/essentials/tree/master/css/less/core).
+All main components and dependencies can be found under folder [less](https://github.com/jacobxperez/essentials/tree/master/css/less).
 
-* [/css/less/core](https://github.com/jacobxperez/essentials/tree/master/css/less/core)
-	* [reset](https://github.com/jacobxperez/essentials/tree/master/css/less/core/reset)
-	* [layout](https://github.com/jacobxperez/essentials/tree/master/css/less/core/layout)
-	* [mixins](https://github.com/jacobxperez/essentials/tree/master/css/less/core/mixins)
+* [/css/less](https://github.com/jacobxperez/essentials/tree/master/css/less)
+    * [components](https://github.com/jacobxperez/essentials/tree/master/css/less/components)
+    * [mixins](https://github.com/jacobxperez/essentials/tree/master/css/less/mixins)
+    * [variables](https://github.com/jacobxperez/essentials/tree/master/css/less/variables)
 
-We recommend to adding extra modules under folder [components](https://github.com/jacobxperez/essentials/tree/master/css/less/components) then link to them on file [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) for compiling.
+We recommend adding extra modules under folder [custom](https://github.com/jacobxperez/essentials/tree/master/css/less/components/custom) then link to them on file [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) for compiling.
 
 * [/css/less/components](https://github.com/jacobxperez/essentials/tree/master/css/less/components)
-	* [modules](https://github.com/jacobxperez/essentials/tree/master/css/less/components/modules)
-	* [navigation](https://github.com/jacobxperez/essentials/tree/master/css/less/components/navigation)
+    * [custom](https://github.com/jacobxperez/essentials/tree/master/css/less/components/custom)
 
 ## Contributing
 
