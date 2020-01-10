@@ -1,0 +1,16 @@
+// Grid System V1.0
+// ----------------------------------------------------------------------------/
+
+.grid(@columns; @prefix; @index: 1) when (@index =< @columns) {
+    .@{prefix}-@{index} {
+        .width(@index, @columns, %);
+    }
+    .grid(@columns, @prefix, (@index + 1));
+}
+
+.grid-child(@columns; @prefix) when (1 =< @columns) {
+    .@{prefix}-@{columns} {
+        .grid(@columns, @prefix);
+    }
+    .grid-child((@columns - 1), @prefix);
+}

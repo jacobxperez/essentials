@@ -1,0 +1,36 @@
+// Print V1.0
+// ----------------------------------------------------------------------------/
+
+@media print {
+    body,
+    html {
+        height: auto;
+    }
+
+    html {
+        font-size: 100%;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .@{wrapper-class} {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .columns {
+        width: 100%;
+    }
+
+    .hide-print {
+        display: none;
+    }
+}

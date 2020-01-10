@@ -1,0 +1,60 @@
+// Page Wrapper V1.0
+// ----------------------------------------------------------------------------/
+
+.@{wrapper-class},
+.@{wrapper-class}-full {
+    width: 100%;
+    .padding-left(@wrapper-padding);
+    .padding-right(@wrapper-padding);
+}
+
+.@{wrapper-class} {
+    .min-width(@wrapper-small-min-width);
+    .max-width(@wrapper-large-max-width);
+    margin: 0 auto;
+}
+
+body > .@{wrapper-class}:first-child,
+body > .@{wrapper-class}-full:first-child {
+    .padding-top(@wrapper-padding-top);
+}
+
+body {
+    > .@{wrapper-class}:only-child,
+    > .@{wrapper-class}-full:only-child  {
+        .padding-top(@wrapper-padding-top);
+        .padding-bottom(@wrapper-padding-bottom);
+    }
+}
+
+body {
+    > .@{wrapper-class}:last-child,
+    > .@{wrapper-class}-full:last-child {
+        .padding-bottom(@wrapper-padding-bottom);
+    }
+}
+
+
+// Medium Wrapper
+// ----------------------------------------------------------------------------/
+
+@media screen and (max-width: @breakpoint-medium-max) {
+    .@{wrapper-class} {
+        .max-width(@wrapper-medium-max-width);
+    }
+}
+
+
+// Small Wrapper
+// ----------------------------------------------------------------------------/
+
+@media screen and (max-width: @breakpoint-small-max) {
+    .@{wrapper-class} {
+        .max-width(@wrapper-small-max-width);
+    }
+}
+
+
+// Scale
+// ----------------------------------------------------------------------------/
+.scale(@scale-width; @scale-height);
