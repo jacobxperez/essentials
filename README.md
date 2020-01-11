@@ -18,7 +18,7 @@ Base CSS Framework — Built with LESS
 
 ## About
 
-Essentials is a base CSS framework build with [LESS](http://lesscss.org/) a preprocessor that extends the capabilities of CSS with dynamic behavior such as variables, mixins, operations, and functions.
+[Essentials](https://jacobxperez.github.io/essentials/) is a base CSS framework build with [LESS](http://lesscss.org/) intended to be used by small scale web projects. It contains all necessary components to build a website this includes a grid system, typography, navigation, and dropdowns just to name a few.
 
 ### Project Status
 
@@ -40,12 +40,11 @@ The easiest way to include [Essentials](https://jacobxperez.github.io/essentials
 
 ### Custom Build
 
-[Essentials](https://jacobxperez.github.io/essentials/) is built on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) for compiling all necessary modules for your website and the [variable files](https://github.com/jacobxperez/essentials/blob/master/css/less/variables) for adjusting the values of fonts, colors, padding and more.
+[Essentials](https://jacobxperez.github.io/essentials/) is built on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) for compiling all necessary modules for your website. To ensure future compatibility each module has been assigned a unique version.
 
 * [/css/style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less)
-* [/css/less/variables](https://github.com/jacobxperez/essentials/blob/master/css/less/variables)
 
-All main components and dependencies can be found under folder [less](https://github.com/jacobxperez/essentials/tree/master/css/less).
+All components and dependencies can be found under folder [less](https://github.com/jacobxperez/essentials/tree/master/css/less). The folder [components](https://github.com/jacobxperez/essentials/tree/master/css/less/components) contains all CSS modules organized by type. The folder [mixins](https://github.com/jacobxperez/essentials/tree/master/css/less/mixins) is where all LESS functions are kept and the folder [variables](https://github.com/jacobxperez/essentials/tree/master/css/less/variables) has all necessary files to adjust the settings of your website.
 
 * [/css/less](https://github.com/jacobxperez/essentials/tree/master/css/less)
     * [components](https://github.com/jacobxperez/essentials/tree/master/css/less/components)
