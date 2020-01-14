@@ -47,7 +47,7 @@
 }
 
 
-// Borders Radius
+// Borders Radius V1.0
 // -----------------------------------------------------------------------------
 
 .border-radius(@top-left: @base-border-radius; @top-right: @base-border-radius; @bottom-right: @top-left; @bottom-left: @top-right; @base: @base-font-size; @unit: em) {
@@ -57,14 +57,12 @@
     @c: unit((@bottom-right / @base), @unit);
     @d: unit((@bottom-left / @base), @unit);
 
-    -webkit-border-radius: @a @b @c @d;
-    -moz-border-radius: @a @b @c @d;
     border-radius: @a @b @c @d;
 
 }
 
 
-// Border Color
+// Border Color V1.0
 // -----------------------------------------------------------------------------
 
 .border-color (@color: @base-border-color; @amount: 6.5%; @switch: none) {
