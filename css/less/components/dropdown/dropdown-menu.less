@@ -1,0 +1,31 @@
+// Dropdown Menu V1.0
+// ----------------------------------------------------------------------------/
+.navbar {
+    .dropdown-box {
+        border: 0;
+        background-color: lighten(@navbar-background-color, 2%);
+        .text-shadow();
+        opacity: 0;
+        z-index: 1000;
+
+        .nav-link {
+            .padding-left(@wrapper-padding);
+            .padding-right(@wrapper-padding);
+        }
+    }
+}
+
+.drop > .dropdown-box {
+    opacity: 0.98;
+}
+
+// Responsive
+// ----------------------------------------------------------------------------/
+
+@media screen and (max-width: @breakpoint-medium-max) {
+    .navbar .dropdown-box {
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+}

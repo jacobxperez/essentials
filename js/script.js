@@ -4,59 +4,63 @@
  * http://www.apache.org/licenses/LICENSE-2.0
 ------------------------------------------------------------------------------*/
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
 
     // Variables
-    const intLinks = document.querySelectorAll('a[href^="#"]');
-    const getDropdown = document.querySelectorAll('.dropdown');
-    const dropdownLength = getDropdown.length;
+    const
+        intLinks = document.querySelectorAll("a[href^='#']"),
+        getDropdown = document.querySelectorAll(".dropdown"),
+        dropdownLength = getDropdown.length;
 
-    // Dropdown
-    for (var i = 0; i < dropdownLength; i++) {
+    let
+        i;
 
-        getDropdown[i].addEventListener('click', function(e) {
-            if (!this.classList.contains('drop')) {
+    // Dropdown v1.0
+    for (i = 0; i < dropdownLength; i++) {
 
-                e.stopPropagation();
-                this.classList.add('drop');
+        getDropdown[i].addEventListener("click", function(e) {
+            e.stopPropagation();
 
-            } else if (this.classList.contains('drop')) {
+            if (!this.classList.contains("drop")) {
 
-                e.stopPropagation();
-                this.classList.remove('drop');
+                this.classList.add("drop");
+
+            } else {
+
+                this.classList.remove("drop");
 
             }
 
         });
 
-    };
+    }
 
     // Hide dropdown on window click
-    document.addEventListener('click', function(e) {
+    document.addEventListener("click", function(e) {
         // check if target is not dropdown
         if (e.target != getDropdown) {
 
-            for (var i = 0; i < dropdownLength; i++) {
+            for (i = 0; i < dropdownLength; i++) {
                 // removes class drop from dropdown
-                getDropdown[i].classList.remove('drop');
-            };
+                getDropdown[i].classList.remove("drop");
+            }
 
         }
 
     });
 
-    // Smooth scroll
-    for (var i = 0; i < intLinks.length; i++) {
-        intLinks[i].addEventListener('click', function(e) {
+    // Smooth scroll v1.0
+    for (i = 0; i < intLinks.length; i++) {
+        intLinks[i].addEventListener("click", function(e) {
 
             e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth"
             });
 
         });
 
-    };
+    }
 
 });

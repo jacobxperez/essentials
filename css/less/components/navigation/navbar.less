@@ -8,20 +8,14 @@
     a {
         color: @navbar-link-color;
 
-        &:focus {
-            outline: 0;
-        }
-
         &.active,
         &:hover {
             color: @navbar-link-color-hover;
-            text-decoration: none;
-            .transition();
         }
     }
 }
 
-.brand {
+.navbar-brand {
     float: left;
     display: block;
     .margin-left(-@grid-gutters);
@@ -29,10 +23,6 @@
     .padding-right(@grid-gutters);
     .font-size(20px);
     .line-height(44px; 20px);
-
-    .logo {
-        .margin-right(5px);
-    }
 }
 
 .navbar + .@{wrapper-class},

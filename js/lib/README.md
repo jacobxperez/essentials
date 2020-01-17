@@ -1,1 +1,1 @@
-Use this folder for adding JavaScript libraries
+Add JavaScript libraries here

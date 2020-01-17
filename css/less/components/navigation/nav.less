@@ -19,14 +19,6 @@
 .nav {
     margin-bottom: 0;
 
-    > li {
-        float: left;
-    }
-
-    > li:last-child {
-        .margin-right(-10px);
-    }
-
     a {
         .padding(10px);
     }
@@ -35,34 +27,27 @@
 .nav-inline {
 
     > li {
-        display: inline-block;
+        float: left;
     }
 
-}
-
-.nav-list {
-
-    .nav-title {
-        .margin-bottom(@base-leading);
-    }
-
-}
-
-.nav-title {
-    font-weight: 700;
 }
 
 .nav-link {
     color: @nav-link-color;
     display: block;
+    .transition();
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-.active,
+.nav-link-active,
 .nav-link:focus,
 .nav-link:hover {
     color: @nav-link-color-hover;
-}
-
-.nav-link:hover {
-    text-decoration: none;
 }
