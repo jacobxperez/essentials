@@ -1,4 +1,7 @@
-// Floats V1.0
+// Utilities v1.0
+// ----------------------------------------------------------------------------/
+
+// Floats
 // ----------------------------------------------------------------------------/
 .float-left {
     float: left;
@@ -9,28 +12,22 @@
 }
 
 
-// Position V1.0
+// Position
 // ----------------------------------------------------------------------------/
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-}
-
+.fixed-top,
 .fixed-bottom {
     position: fixed;
     right: 0;
-    bottom: 0;
     left: 0;
     z-index: 1000;
 }
 
-.sticky-top {
-    position: sticky;
+.fixed-top {
     top: 0;
-    z-index: 1000;
+}
+
+.fixed-bottom {
+    bottom: 0;
 }
 
 .top {
@@ -41,8 +38,16 @@
     bottom: 100%;
 }
 
+.left {
+    left: 0;
+}
 
-// Alignment V1.0
+.right {
+    right: 0;
+}
+
+
+// Alignment
 // ----------------------------------------------------------------------------/
 .indent {
     .padding-left(@indent);
@@ -75,7 +80,7 @@
 }
 
 
-// Visibility V1.0
+// Visibility
 // ----------------------------------------------------------------------------/
 .show-print {
     display: none;
