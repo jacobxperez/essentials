@@ -3,64 +3,87 @@
  * Licensed under the Apache License, Version 2.0
  * http://www.apache.org/licenses/LICENSE-2.0
 ------------------------------------------------------------------------------*/
-
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Variables
-    const
-        intLinks = document.querySelectorAll("a[href^='#']"),
-        getDropdown = document.querySelectorAll(".dropdown"),
-        dropdownLength = getDropdown.length;
+    // Accordion v1.0
+    (function () {
+        const getAccordion = document.querySelectorAll(".js-toggle-accordion");
 
-    let
-        i;
+        for (let i = 0; i < getAccordion.length; i++) {
+
+            getAccordion[i].addEventListener("click", function(e) {
+                const getBox = getAccordion[i].querySelector(".accordion-box");
+
+                // toggle class show
+                if (this.classList.contains("show") === false) {
+
+                    this.classList.add("show");
+
+                } else if (this.classList.contains("show") === true) {
+
+                    this.classList.remove("show");
+
+                } // end if block
+
+                e.stopPropagation();
+            });
+        } // end for loop
+    })();
+    // end Accordion
+
 
     // Dropdown v1.0
-    for (i = 0; i < dropdownLength; i++) {
+    (function () {
+        const getDropdown = document.querySelectorAll(".js-toggle-dropdown");
 
-        getDropdown[i].addEventListener("click", function(e) {
-            e.stopPropagation();
+        for (let i = 0; i < getDropdown.length; i++) {
+            getDropdown[i].addEventListener("click", function(e) {
 
-            if (!this.classList.contains("drop")) {
+                // toggle class show
+                if (this.classList.contains("show") === false) {
 
-                this.classList.add("drop");
+                    this.classList.add("show");
 
-            } else {
+                } else if (this.classList.contains("show") === true) {
 
-                this.classList.remove("drop");
+                    this.classList.remove("show");
 
-            }
+                } // end if block
 
-        });
-
-    }
-
-    // Hide dropdown on window click
-    document.addEventListener("click", function(e) {
-        // check if target is not dropdown
-        if (e.target != getDropdown) {
-
-            for (i = 0; i < dropdownLength; i++) {
-                // removes class drop from dropdown
-                getDropdown[i].classList.remove("drop");
-            }
-
-        }
-
-    });
-
-    // Smooth scroll v1.0
-    for (i = 0; i < intLinks.length; i++) {
-        intLinks[i].addEventListener("click", function(e) {
-
-            e.preventDefault();
-
-            document.querySelector(this.getAttribute("href")).scrollIntoView({
-                behavior: "smooth"
+                e.stopPropagation();
             });
+        } // end for loop
 
+        // Hide dropdown on window click
+        document.addEventListener("click", function(e) {
+            // check if target is not dropdown
+            if (e.target !== getDropdown) {
+                for (let i = 0; i < getDropdown.length; i++) {
+                    // removes class show from all dropdowns
+                    getDropdown[i].classList.remove("show");
+                } // end for loop
+            }
         });
+    })();
+    // end Dropdown
 
-    }
 
-});
+    // Smooth Scroll v1.0
+    (function () {
+        const intLinks = document.querySelectorAll("a[href^='#']");
+
+        for (let i = 0; i < intLinks.length; i++) {
+            intLinks[i].addEventListener("click", function(e) {
+
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                });
+
+            });
+        } // end for loop
+    })();
+    // end Smooth Scroll
+
+}); // end Script
