@@ -1,11 +1,13 @@
-// Navbar Dropdown V1.0
+// Dropdown Menu V1.0
 // ----------------------------------------------------------------------------/
-.navbar-box {
-    border: 0;
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    .min-width(@dropdown-box-min-width);
     background-color: lighten(@navbar-background-color, 2%);
     .text-shadow();
+    visibility: hidden;
     opacity: 0;
-    z-index: 1000;
 
     .nav-link {
         .padding-left(@wrapper-padding);
@@ -14,12 +16,13 @@
 }
 
 .fixed-bottom {
-    .navbar-box {
+    .dropdown-menu {
         bottom: 100%;
     }
 }
 
-.show + .navbar-box {
+.dropdown-active + .dropdown-menu {
+    visibility: visible;
     opacity: 0.98;
 }
 
@@ -28,11 +31,11 @@
 // ----------------------------------------------------------------------------/
 @media screen and (max-width: @breakpoint-medium-max) {
 
-    .navbar-dropdown {
+    .navbar .dropdown {
         position: static;
     }
 
-    .navbar-box {
+    .dropdown-menu {
         left: 0;
         right: 0;
         width: 100%;
