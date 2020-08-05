@@ -5,24 +5,22 @@
     width: 100%;
     background-color: @navbar-background-color;
 
-    a {
+    .nav-link {
+        .padding(@navbar-link-padding-y; @navbar-link-padding-x);
         color: @navbar-link-color;
 
         &.active,
         &:hover {
-            color: @navbar-link-color-hover;
+        color: @navbar-link-color-hover;
         }
     }
 }
 
-.navbar-brand {
-    float: left;
-    display: block;
-    .margin-left(-@grid-gutters);
-    .padding-left(@grid-gutters);
-    .padding-right(@grid-gutters);
-    .font-size(20px);
-    .line-height(44px; 20px);
+.navbar-title {
+    display: inline-block;
+    .margin-left(-@navbar-link-padding-x);
+    .font-size(@navbar-title-font-size);
+    .line-height(@navbar-title-line-height; @navbar-title-font-size);
 }
 
 .navbar + .@{wrapper-class},

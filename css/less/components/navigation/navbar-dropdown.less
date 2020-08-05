@@ -1,29 +1,13 @@
-// Dropdown Menu V1.0
-// use with navbar
+// Navbar Dropdown Plugin V1.0
 // ----------------------------------------------------------------------------/
-.dropdown-menu {
-    position: absolute;
-    z-index: 1000;
-    .min-width(@dropdown-box-min-width);
+.navbar .dropdown-box {
+    border: 0;
     background-color: lighten(@navbar-background-color, 2%);
-    visibility: hidden;
     opacity: 0;
-
-    .nav-link {
-        .padding-left(@wrapper-padding);
-        .padding-right(@wrapper-padding);
-    }
-}
-
-.fixed-bottom {
-    .dropdown-menu {
-        bottom: 100%;
-    }
 }
 
 // added by javascript
-.dropdown-active + .dropdown-menu {
-    visibility: visible;
+.dropdown-active + .dropdown-box {
     opacity: 0.98;
 }
 
@@ -36,10 +20,15 @@
         position: static;
     }
 
-    .dropdown-menu {
+    .navbar .dropdown-box {
         left: 0;
         right: 0;
         width: 100%;
+
+        .nav-link {
+            .padding-left(@wrapper-padding);
+            .padding-right(@wrapper-padding);
+        }
     }
 
 }
