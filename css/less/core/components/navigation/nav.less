@@ -1,35 +1,13 @@
 // Navigation V1.0
 // -----------------------------------------------------------------------------
-.nav,
-.nav-list,
-.nav-inline {
-    .clearfix();
-}
-
-.nav,
-.nav ul,
-.nav-list,
-.nav-list ul,
-.nav-inline,
-.nav-inline ul {
-    padding-left: 0;
-    list-style-type: none;
-}
-
 .nav {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 0;
 
     .nav-link {
         .padding(@nav-link-padding-y; @nav-link-padding-x);
     }
-}
-
-.nav-inline {
-
-    > li {
-        float: left;
-    }
-
 }
 
 .nav-link {
