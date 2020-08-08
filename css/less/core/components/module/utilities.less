@@ -1,4 +1,4 @@
-// Utilities v1.0
+// Utilities
 // ----------------------------------------------------------------------------/
 
 // Floats ---------------------------------------------------------------------/
@@ -12,6 +12,16 @@
 
 
 // Position -------------------------------------------------------------------/
+.position-static {
+    position: static;
+}
+
+.position-stretch {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
 .fixed-top,
 .fixed-bottom {
     position: fixed;
@@ -75,12 +85,16 @@
     hyphens: auto;
 }
 
+.leading-top {
+    .margin-top(@base-leading);
+}
+
 .leading {
     .margin-bottom(@base-leading);
 }
 
 
-// Flex -----------------------------------------------------------------------/
+// Grid and Flex Box ----------------------------------------------------------/
 .flex-row {
     flex-direction: row;
 }
@@ -89,8 +103,32 @@
     flex-direction: column;
 }
 
+.flex-grow {
+    flex-grow: 100;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
 .justify-center {
     justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
 }
 
 

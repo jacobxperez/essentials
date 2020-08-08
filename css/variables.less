@@ -1,4 +1,6 @@
 // Variables
+// Always work on px and the mixins will output in relative units
+// Variables that can be set to false will NOT output a style declaration
 // ----------------------------------------------------------------------------/
 
 // Page Wrapper ---------------------------------------------------------------/
@@ -18,7 +20,7 @@
 
 
 // Scale ----------------------------------------------------------------------/
-// site begins to scale at a given screen width and height
+// site begins to scale up at a given screen width and height
 
 // @scale-width: 1600px;
 // @scale-height: @scale-width;
@@ -147,7 +149,7 @@
 // @base-border-width: 1px; // can be set to false
 // @base-border-style: solid;
 // @base-border-color: rgba(0, 0, 0, 0.3);
-// @base-border-radius: 4px;
+// @base-border-radius: false;
 
 
 // List Items -----------------------------------------------------------------/
@@ -205,6 +207,15 @@
 // @button-border-width: @base-border-width; // can be set to false
 // @button-border-color: @base-border-color;
 // @button-border-radius: @base-border-radius;
+
+// branding
+// @button-primary-color: #fff;
+// @button-secondary-color: #fff;
+
+// actions
+// @button-success-color: #fff;
+// @button-warning-color: #fff;
+// @button-danger-color: #fff;
 
 // @button-disabled-color: #8c8c8c;
 // @button-disabled-background-color: #bebebe;

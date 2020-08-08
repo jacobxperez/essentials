@@ -126,7 +126,6 @@ ul ul {
 }
 
 hr {
-    box-sizing: content-box;
     display: block;
     height: 1px;
     margin-bottom: 1.5rem;
@@ -345,7 +344,6 @@ textarea {
     width: 100%;
     background-color: #fff;
     line-height: 24px;
-    border-radius: .25rem .25rem .25rem .25rem;
     box-shadow: none;
 }
 
@@ -394,7 +392,6 @@ input[type=button] {
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
-    border-radius: .25rem .25rem .25rem .25rem;
     cursor: pointer;
 }
 
@@ -449,23 +446,10 @@ html input[disabled]:hover {
 
 .container,
 .container-full {
-    position: relative;
+    display: grid;
     width: 100%;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-}
-
-.container-full:after,
-.container-full:before,
-.container:after,
-.container:before {
-    content: " ";
-    display: table;
-}
-
-.container-full:after,
-.container:after {
-    clear: both;
 }
 
 .container {
@@ -609,6 +593,7 @@ body > .container:last-child {
 
 .nav {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 0;
 }
@@ -648,37 +633,8 @@ body > .container:last-child {
     margin-right: 0;
 }
 
-.navbar {
-    z-index: 1025;
-    width: 100%;
-    background-color: #222;
-}
-
-.navbar .nav-link {
-    padding: .625rem .875rem;
-    color: #fff;
-}
-
-.navbar .nav-link.active,
-.navbar .nav-link:hover {
-    color: #cccccc;
-}
-
-.navbar-title {
-    display: inline-block;
-    margin-left: -0.875rem;
-    font-size: 1.125rem;
-    line-height: 1.33333333;
-}
-
-.navbar + .container,
-.navbar + .container-full {
-    padding-top: 5rem;
-}
-
 .dropdown {
     position: relative;
-    list-style-type: none;
 }
 
 .dropdown-box {
@@ -699,35 +655,8 @@ body > .container:last-child {
     visibility: visible;
 }
 
-.navbar .dropdown-box {
-    border: 0;
-    background-color: #272727;
-    opacity: 0;
-}
-
-.dropdown-active + .dropdown-box {
-    opacity: .98;
-}
-@media screen and (max-width: 61.1875em) {
-    .navbar .dropdown {
-        position: static;
-    }
-
-    .navbar .dropdown-box {
-        left: 0;
-        right: 0;
-        width: 100%;
-    }
-
-    .navbar .dropdown-box .nav-link {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-    }
-}
-
 .accordion {
     position: relative;
-    list-style-type: none;
 }
 
 .accordion-box {
@@ -738,6 +667,49 @@ body > .container:last-child {
 
 .accordion-active + .accordion-box {
     display: block;
+}
+
+.navbar {
+    z-index: 1025;
+    width: 100%;
+    background-color: #222;
+}
+
+.navbar-link {
+    padding: .625rem .875rem;
+    color: #fff;
+}
+
+.navbar-link.active,
+.navbar-link:hover {
+    color: #cccccc;
+}
+
+.navbar > .container > .nav,
+.navbar > .container-full > .nav {
+    margin-left: -0.875rem;
+    margin-right: -0.875rem;
+}
+
+.navbar + .container,
+.navbar + .container-full {
+    padding-top: 5rem;
+}
+
+.navbar-box {
+    border: 0;
+    background-color: #272727;
+    opacity: 0;
+}
+
+.dropdown-active + .navbar-box {
+    opacity: .98;
+}
+@media screen and (max-width: 61.1875em) {
+    .navbar-box .nav-link {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
 }
 
 .button-primary {
@@ -831,6 +803,16 @@ body > .container:last-child {
     float: right;
 }
 
+.position-static {
+    position: static;
+}
+
+.position-stretch {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
 .fixed-bottom,
 .fixed-top {
     position: fixed;
@@ -892,6 +874,10 @@ body > .container:last-child {
     hyphens: auto;
 }
 
+.leading-top {
+    margin-top: 1.5rem;
+}
+
 .leading {
     margin-bottom: 1.5rem;
 }
@@ -904,8 +890,32 @@ body > .container:last-child {
     flex-direction: column;
 }
 
+.flex-grow {
+    flex-grow: 100;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
 .justify-center {
     justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
 }
 
 .show-print {
