@@ -3,47 +3,73 @@
 // Variables that can be set to false will NOT output a style declaration
 // ----------------------------------------------------------------------------/
 
-// Page Wrapper ---------------------------------------------------------------/
+// Page Wrapper
+// Automatacly calculates wrapper paddings
+// ----------------------------------------------------------------------------/
 @wrapper-class: container;
-@wrapper-padding: 20px;
+// @wrapper-padding: 20px;
 // @wrapper-padding-top: @wrapper-padding * 2;
 // @wrapper-padding-bottom: @wrapper-padding * 3;
 
-// small wrapper widths
-@wrapper-small-width: 640px;
+// min width
+@wrapper-min-width: (280px + (@wrapper-padding * 2));
 
-// medium wrapper widths
-@wrapper-medium-width: 800px;
-
-// large wrapper widths
-@wrapper-large-width: 940px;
+// max width
+@wrapper-max-width: (940px + (@wrapper-padding * 2));
 
 
-// Scale ----------------------------------------------------------------------/
+// Breakpoints
+// ----------------------------------------------------------------------------/
+
+// small screen
+@viewport-small-max-width: (640px + (@wrapper-padding * 2));
+
+// medium screen: starts after small max and end before large min
+@viewport-medium-min-width: (@viewport-small-max-width + 1 / @base-font-size);
+@viewport-medium-max-width: (@viewport-large-min-width - 1 / @base-font-size);
+
+// large screens
+@viewport-large-min-width: (940px + (@wrapper-padding * 2));
+
+
+// Scale
 // site begins to scale up at a given screen width and height
+// ----------------------------------------------------------------------------/
 
 // @scale-width: 1600px;
 // @scale-height: @scale-width;
 
 
-// Grid System ----------------------------------------------------------------/
-// @grid-class: grid;
-// @grid-gap: 10px;
+// Grid System
+// ----------------------------------------------------------------------------/
+// @grid-column-class: span-;
+// @grid-gap: @wrapper-padding;
 
 // small grid
-// @small-prefix: small;
 // @small-columns: 4;
 
 // medium grid
-// @medium-prefix: medium;
 // @medium-columns: 8;
 
 // large grid
-// @large-prefix: large;
 // @large-columns: 12;
 
 
-// Colors ---------------------------------------------------------------------/
+// Responsive Prefix
+// ----------------------------------------------------------------------------/
+
+// small screen
+// @small-prefix: sm-;
+
+// medium screen
+// @medium-prefix: md-;
+
+// large screen
+// @large-prefix: lg-;
+
+
+// Colors
+// ----------------------------------------------------------------------------/
 
 // page background color
 // @background-color: #fff;
@@ -64,8 +90,8 @@
 // @default: #e6e6e6;
 
 
-// Typography -----------------------------------------------------------------/
-// for more fonts check out variables folder font-stack.less
+// Typography
+// ----------------------------------------------------------------------------/
 
 // base font family
 // @base-font-family: @font-sans;
@@ -80,7 +106,7 @@
 // @base-leading: @base-line-height;
 
 // indentation
-// @indent: 32px;
+// @indent: @base-line-height;
 
 // link
 // @link-color: @primary;
@@ -129,60 +155,58 @@
 // @mark-background: #fc0;
 // @mark-color: #000;
 
-// hr
-// @hr-border-width: 2px; // can be set to false
-// @hr-border-style: @base-border-style;
-// @hr-border-color: @base-border-color;
 
-
-// Box Model ------------------------------------------------------------------/
+// Box Model
+// ----------------------------------------------------------------------------/
 
 // margins
-// @base-margin-y: 20px;
-// @base-margin-x: 20px;
+// @base-margin-y: 10px;
+// @base-margin-x: 10px;
 
 // paddings
 // @base-padding-y: 8px;
-// @base-padding-x: 14px;
+// @base-padding-x: 12px;
 
 // borders
-// @base-border-width: 1px; // can be set to false
+// @base-border-width: 1px;
 // @base-border-style: solid;
 // @base-border-color: rgba(0, 0, 0, 0.3);
 // @base-border-radius: false;
 
 
-// List Items -----------------------------------------------------------------/
+// List Items
+// ----------------------------------------------------------------------------/
 // @list-indent: @indent; // padding left
 // @list-leading: @base-leading; // margin bottom
 // @list-style-position: outside;
 
 
-// Code -----------------------------------------------------------------------/
+// Code
+// ----------------------------------------------------------------------------/
 // @code-font-family: @font-mono;
-// @code-background-color: #222;
-// @code-color: #e6e6e6;
 
 
-// Pre ------------------------------------------------------------------------/
+// Pre
+// ----------------------------------------------------------------------------/
 // @pre-white-space: pre-wrap;
-// @pre-background-color: @code-background-color;
-// @pre-color: @code-color;
 
 
-// Blockquote -----------------------------------------------------------------/
+// Blockquote
+// ----------------------------------------------------------------------------/
 // @blockquote-font-family: @font-serif;
 // @blockquote-font-size: @h3-font-size;
 // @blockquote-font-style: italic;
 // @blockquote-leading: @base-leading;
 
 
-// Table ----------------------------------------------------------------------/
+// Table
+// ----------------------------------------------------------------------------/
 // @table-cell-padding-y: @base-padding-y;
 // @table-cell-padding-x: @base-padding-x;
 
 
-// Form -----------------------------------------------------------------------/
+// Form
+// ----------------------------------------------------------------------------/
 // @form-padding-y: @base-padding-y;
 // @form-padding-x: @base-padding-x;
 
@@ -194,7 +218,8 @@
 // @form-border-radius: @base-border-radius;
 
 
-// Button ---------------------------------------------------------------------/
+// Button
+// ----------------------------------------------------------------------------/
 // @button-class: button;
 // @button-padding-y: @base-padding-y;
 // @button-padding-x: @base-padding-x;
@@ -221,35 +246,40 @@
 // @button-disabled-background-color: #bebebe;
 
 
-// Dropdown -------------------------------------------------------------------/
-// @dropdown-box-background-color: @background-color;
-// @dropdown-box-min-width: 160px;
+// hr
+// ----------------------------------------------------------------------------/
+// @hr-border-width: @base-border-width; // can be set to false
+// @hr-border-style: @base-border-style;
+// @hr-border-color: @base-border-color;
 
 
-// Nav ------------------------------------------------------------------------/
+// Ghost Box
+// ----------------------------------------------------------------------------/
+// @ghost-box-min-width: 160px;
+// @ghost-box-background-color: @background-color;
+
+
+// Nav
+// ----------------------------------------------------------------------------/
 // @nav-link-color: @link-color;
 // @nav-link-color-hover: @font-color;
 // @nav-link-padding-y: @base-padding-y;
 // @nav-link-padding-x: @base-padding-x;
 
 
-// Navbar ---------------------------------------------------------------------/
-// @navbar-background-color: #222;
-
-// @navbar-title-font-size: 18px;
-// @navbar-title-line-height: @base-line-height;
-
+// Navbar
+// ----------------------------------------------------------------------------/
 // @navbar-link-color: #fff;
 // @navbar-link-color-hover: darken(@navbar-link-color, 20%);
-// @navbar-link-padding-y: 10px;
-// @navbar-link-padding-x: @base-padding-x;
 
 
-// Breadcrumb -----------------------------------------------------------------/
+// Breadcrumb
+// ----------------------------------------------------------------------------/
 // @breadcrumb-separator: " /";
 
 
-// Iconography ----------------------------------------------------------------/
+// Iconography
+// ----------------------------------------------------------------------------/
 // @icon-class: icon;
 // @icon-font-name: "icons";
 // @icon-font-path: "../fonts/icons/";
@@ -258,6 +288,7 @@
 // @icon-line-height: 10px;
 
 
-// // Selection ------------------------------------------------------------------/
+// // Selection
+// ----------------------------------------------------------------------------/
 // @selection-background: #cde1ff;
 // @selection-color: #000;

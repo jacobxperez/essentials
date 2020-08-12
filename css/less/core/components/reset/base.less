@@ -8,7 +8,6 @@
     font-size: inherit;
     font-family: inherit;
     line-height: inherit;
-    vertical-align: baseline;
     color: inherit;
     outline: 0;
 }
@@ -35,9 +34,22 @@ footer,
 header,
 main,
 menu,
-nav,
 section {
     display: block;
+}
+
+nav,
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    align-items: baseline;
+
+    ul {
+        margin-bottom: 0;
+    }
 }
 
 audio,
