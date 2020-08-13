@@ -21,9 +21,12 @@
 // large screen
 @breakpoint-large-min: unit((@viewport-large-min-width / @base-font-size), em);
 
+// scale portrait
+@portrait-font-size: 1vw;
+@portrait-min-width: 1600px;
+@portrait-min-height: 900px;
 
-// Scale
-// site begins to scale at a given screen width and height
-// ----------------------------------------------------------------------------/
-@scale-width: 1600px;
-@scale-height: @scale-width;
+// scale landscape
+@landscape-font-size: 1vh;
+@landscape-min-width: @portrait-min-height;
+@landscape-min-height: @portrait-min-width;
