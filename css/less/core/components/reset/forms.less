@@ -15,12 +15,12 @@ input[type=week],
 select,
 textarea {
     display: block;
+    width: 100%;
     .padding(@form-padding-y; @form-padding-x);
     .border(@form-border-width; solid; @form-border-color);
-    width: 100%;
-    background-color: @form-background-color;
-    line-height: @base-line-height;
     .border-radius(@form-border-radius);
+    .background-color(@form-background-color);
+    .color(@form-color);
     box-shadow: none;
 }
 
@@ -40,7 +40,6 @@ input[type=week]:focus,
 select:focus,
 textarea:focus {
     border-color: @form-border-color-focus;
-    color: @font-color;
     box-shadow: none;
 }
 
@@ -48,6 +47,14 @@ textarea {
     .min-height(100px);
     overflow: auto;
     resize: vertical;
+}
+
+button,
+input[type=button],
+input[type="submit"],
+select {
+    overflow: visible;
+    text-transform: none;
 }
 
 :not([type=submit]):invalid {

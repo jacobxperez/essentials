@@ -12,20 +12,11 @@
 }
 
 body > .@{wrapper-class}:first-child {
-    .padding-top(@wrapper-padding-top);
+    .margin-top(@base-line-height * 2);
 }
 
-body {
-    > .@{wrapper-class}:only-child  {
-        .padding-top(@wrapper-padding-top);
-        .padding-bottom(@wrapper-padding-bottom);
-    }
-}
-
-body {
-    > .@{wrapper-class}:last-child {
-        .padding-bottom(@wrapper-padding-bottom);
-    }
+body > .@{wrapper-class}:last-child {
+    .margin-bottom(@base-line-height * 4);
 }
 
 .fixed-top .@{wrapper-class} > ul {
@@ -34,5 +25,5 @@ body {
 }
 
 .fixed-top + .@{wrapper-class} {
-    .padding-top(@wrapper-padding-top * 2);
+    .margin-top(@base-line-height * 4);
 }

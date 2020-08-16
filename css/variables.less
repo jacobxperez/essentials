@@ -4,12 +4,9 @@
 // ----------------------------------------------------------------------------/
 
 // Page Wrapper
-// Automatacly calculates wrapper paddings
 // ----------------------------------------------------------------------------/
 @wrapper-class: container;
 // @wrapper-gap: 20px;
-// @wrapper-padding-top: @wrapper-gap * 2;
-// @wrapper-padding-bottom: @wrapper-gap * 3;
 
 // min width
 @wrapper-min-width: (280px + (@wrapper-gap * 2));
@@ -20,7 +17,6 @@
 
 // Breakpoints
 // ----------------------------------------------------------------------------/
-
 // small screen
 @viewport-small-max-width: (640px + (@wrapper-gap * 2));
 
@@ -30,16 +26,6 @@
 
 // large screens
 @viewport-large-min-width: (940px + (@wrapper-gap * 2));
-
-// scale portrait
-// @portrait-font-size: 1vw;
-// @portrait-min-width: 1600px;
-// @portrait-min-height: 900px;
-
-// scale landscape
-// @landscape-font-size: 1vh;
-// @landscape-min-width: @portrait-min-height;
-// @landscape-min-height: @portrait-min-width;
 
 
 // Grid System
@@ -60,7 +46,6 @@
 
 // Responsive Prefix
 // ----------------------------------------------------------------------------/
-
 // small screen
 // @small-prefix: sm-;
 
@@ -71,9 +56,8 @@
 // @large-prefix: lg-;
 
 
-// Colors
+// Color Palette
 // ----------------------------------------------------------------------------/
-
 // page background color
 // @background-color: #fff;
 
@@ -82,20 +66,32 @@
 
 // branding
 // @primary: #06f;
+// @primary-text: #fff;
+
 // @secondary: #493d99;
+// @secondary-text: #fff;
+
+// @light: #eee;
+// @light-text: @primary;
+
+// @neutral: #ccc;
+// @neutral-text: #555;
+
+// @dark: #222;
+// @dark-text: #fff;
 
 // actions
 // @success: #393;
 // @warning: #fa0;
 // @danger: #c00;
 
-// fallback
-// @default: #e6e6e6;
+// disabled
+// @disabled: #bebebe;
+// @disabled-text: #ccc;
 
 
 // Typography
 // ----------------------------------------------------------------------------/
-
 // base font family
 // @base-font-family: @font-sans;
 
@@ -107,9 +103,6 @@
 
 // leading "margin bottom"
 // @base-leading: @base-line-height;
-
-// indentation
-// @indent: @base-line-height;
 
 // link
 // @link-color: @primary;
@@ -123,17 +116,17 @@
 
 // heading 1
 // @h1-font-size: 48px;
-// @h1-line-height: 54px;
-// @h1-leading: 18px;
+// @h1-line-height: 48px;
+// @h1-leading: false;
 
 // heading 2
 // @h2-font-size: 32px;
-// @h2-line-height: 36px;
+// @h2-line-height: 48px;
 // @h2-leading: false;
 
 // heading 3
 // @h3-font-size: 24px;
-// @h3-line-height: 36px;
+// @h3-line-height: @base-line-height;
 // @h3-leading: false;
 
 // heading 4
@@ -158,14 +151,12 @@
 // @mark-background: #fc0;
 // @mark-color: #000;
 
+// indentation
+// @indent: @base-line-height;
+
 
 // Box Model
 // ----------------------------------------------------------------------------/
-
-// margins
-// @base-margin-y: 10px;
-// @base-margin-x: 10px;
-
 // paddings
 // @base-padding-y: 8px;
 // @base-padding-x: 12px;
@@ -174,10 +165,10 @@
 // @base-border-width: 1px;
 // @base-border-style: solid;
 // @base-border-color: rgba(0, 0, 0, 0.3);
-// @base-border-radius: false;
+// @base-border-radius: 4px;
 
 
-// List Items
+// List ul, li, dl
 // ----------------------------------------------------------------------------/
 // @list-indent: @indent; // padding left
 // @list-leading: @base-leading; // margin bottom
@@ -199,7 +190,6 @@
 // @blockquote-font-family: @font-serif;
 // @blockquote-font-size: @h3-font-size;
 // @blockquote-font-style: italic;
-// @blockquote-leading: @base-leading;
 
 
 // Table
@@ -213,53 +203,13 @@
 // @form-padding-y: @base-padding-y;
 // @form-padding-x: @base-padding-x;
 
-// @form-background-color: @background-color;
+// @form-background-color: @background-color; // default false
+// @form-color: @font-color; // default false
 
 // @form-border-width: @base-border-width; // can be set to false
 // @form-border-color: @base-border-color;
 // @form-border-color-focus: @link-color;
-// @form-border-radius: @base-border-radius;
-
-
-// Button
-// ----------------------------------------------------------------------------/
-// @button-class: button;
-// @button-padding-y: @base-padding-y;
-// @button-padding-x: @base-padding-x;
-
-// @button-color: @font-color;
-// @button-background-color: @default;
-// @button-background-color-hover: lighten(@button-background-color, 3%);
-// @button-background-color-active: darken(@button-background-color, 3%);
-
-// @button-border-width: @base-border-width; // can be set to false
-// @button-border-color: @base-border-color;
-// @button-border-radius: @base-border-radius;
-
-// branding
-// @button-primary-color: #fff;
-// @button-secondary-color: #fff;
-
-// actions
-// @button-success-color: #fff;
-// @button-warning-color: #fff;
-// @button-danger-color: #fff;
-
-// @button-disabled-color: #8c8c8c;
-// @button-disabled-background-color: #bebebe;
-
-
-// hr
-// ----------------------------------------------------------------------------/
-// @hr-border-width: @base-border-width; // can be set to false
-// @hr-border-style: @base-border-style;
-// @hr-border-color: @base-border-color;
-
-
-// Ghost Box
-// ----------------------------------------------------------------------------/
-// @ghost-box-min-width: 160px;
-// @ghost-box-background-color: @background-color;
+// @form-border-radius: @base-border-radius; // default false
 
 
 // Nav
@@ -270,15 +220,31 @@
 // @nav-link-padding-x: @base-padding-x;
 
 
-// Navbar
-// ----------------------------------------------------------------------------/
-// @navbar-link-color: #fff;
-// @navbar-link-color-hover: darken(@navbar-link-color, 20%);
-
-
 // Breadcrumb
 // ----------------------------------------------------------------------------/
 // @breadcrumb-separator: " /";
+
+
+// Button
+// ----------------------------------------------------------------------------/
+// @button-class: button;
+// @button-color: @font-color;
+
+// @button-padding-y: @base-padding-y - @button-border-width;
+// @button-padding-x: @base-padding-x;
+
+// @button-border-width: @base-border-width; // can be set to false
+// @button-border-color: transparent;
+// @button-border-radius: @base-border-radius; // default false
+
+// @button-disabled-color: @disabled-text;
+// @button-disabled-background-color: @disabled;
+// @button-disabled-border-color: #ddd;
+
+
+// Ghost Box
+// ----------------------------------------------------------------------------/
+// @ghost-box-min-width: 160px;
 
 
 // Iconography
@@ -289,6 +255,13 @@
 
 // @icon-font-size: @base-font-size;
 // @icon-line-height: 10px;
+
+
+// hr
+// ----------------------------------------------------------------------------/
+// @hr-border-width: @base-border-width; // can be set to false
+// @hr-border-style: @base-border-style;
+// @hr-border-color: @base-border-color;
 
 
 // // Selection

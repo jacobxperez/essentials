@@ -1,12 +1,11 @@
 // Typography
 // for more fonts check out variables folder font-stack.less
 // ----------------------------------------------------------------------------/
-
 // base font family
 @base-font-family: @font-sans;
 
 // font size
-@root-font-size: 16px; // not set in custom variables.less
+@root-font-size: 16px;
 @base-font-size: 16px;
 
 // line height
@@ -14,9 +13,6 @@
 
 // leading "margin bottom"
 @base-leading: @base-line-height;
-
-// indentation
-@indent: @base-line-height;
 
 // link
 @link-color: @primary;
@@ -30,17 +26,17 @@
 
 // heading 1
 @h1-font-size: 48px;
-@h1-line-height: 54px;
-@h1-leading: 18px;
+@h1-line-height: 48px;
+@h1-leading: false;
 
 // heading 2
 @h2-font-size: 32px;
-@h2-line-height: 36px;
+@h2-line-height: 48px;
 @h2-leading: false;
 
 // heading 3
 @h3-font-size: 24px;
-@h3-line-height: 36px;
+@h3-line-height: @base-line-height;
 @h3-leading: false;
 
 // heading 4
@@ -69,3 +65,6 @@
 @hr-border-width: @base-border-width; // can be set to false
 @hr-border-style: @base-border-style;
 @hr-border-color: @base-border-color;
+
+// indentation
+@indent: @base-line-height;

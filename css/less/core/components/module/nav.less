@@ -21,12 +21,14 @@
     color: @nav-link-color-hover;
 }
 
-.navbar-link {
-    color: @navbar-link-color;
 
-    &.active,
+.dark-link {
+    color: @dark-text;
+
+    &:active,
+    &:focus,
     &:hover {
-    color: @navbar-link-color-hover;
+        color: #ccc;
     }
 }
 
