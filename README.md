@@ -9,20 +9,16 @@ Composable Design System — Built with [LESS](http://lesscss.org/)
 * [Getting Started](#getting-started)
     * [Default Build](#default-build)
     * [Custom Build](#custom-build)
-* [Contributing](#contributing)
-    * [Bug Reports](#bug-reports)
-    * [Feature Requests](#feature-requests)
-    * [Pull Requests](#pull-requests)
-* [Design Principles](#design-principles)
+    * [Contributing](#contributing)
 * [LICENSE](#license)
 
 ## About
 
-[Essentials](https://jacobxperez.github.io/essentials/) is a front-end composable design system build with [LESS](http://lesscss.org/).
+[Essentials](https://jacobxperez.github.io/essentials/) is a front-end composable design system.
 
 ### Project Status
 
-Project under active development. **NO** stable version has been released.
+This project is under active development and there is **NO** stable version as of today. Pleas read our [contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md) guidelines if you wish to further the development of [Essentials](https://jacobxperez.github.io/essentials/).
 
 ## Getting Started
 
@@ -39,42 +35,16 @@ The easiest way to include [Essentials](https://jacobxperez.github.io/essentials
 
 ### Custom Build
 
-Adjust the [variables](https://github.com/jacobxperez/essentials/blob/master/css/variables.less) and if needed add [custom](https://github.com/jacobxperez/essentials/blob/master/css/custom.less) code then compile everything with [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) to produce the final [CSS](https://github.com/jacobxperez/essentials/blob/master/css/style.css).
+Adjust the [variables](https://github.com/jacobxperez/essentials/blob/master/css/variables.less) and if needed, add [custom](https://github.com/jacobxperez/essentials/blob/master/css/custom.less) code then compile everything together in [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) to produce the final [CSS](https://github.com/jacobxperez/essentials/blob/master/css/style.css). Optional, comment out unwanted components from [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) then compile your project.
 
 * [/css](https://github.com/jacobxperez/essentials/tree/master/css)
-    * [variables.less](https://github.com/jacobxperez/essentials/blob/master/css/variables.less) (adjust the settings)
     * [custom.less](https://github.com/jacobxperez/essentials/blob/master/css/custom.less) (write custom modules)
     * [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) (compile everything together)
+    * [variables.less](https://github.com/jacobxperez/essentials/blob/master/css/variables.less) (adjust the settings)
 
-## Contributing
+### [Contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md)
 
-Help us make [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, feature requests and submitting pull requests. Please read our [Design Principles](#design-principles) to better understand the nature and the direction of the project.
-
-### Bug Reports
-
-Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem? What would you expect to be the outcome? All these details will help us fix any potential bugs.
-
-### Feature Requests
-
-Before opening a feature request, please take a moment to find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible.
-
-### Pull Requests
-
-Please ask first before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project. When contributing code to this project always ask yourself these questions.
-
-* Is it essential?
-* Will it add value?
-* Is this change necessary?
-
-## Design Principles
-
-Leo Babauta demonstrates in his book The Power of Less how to streamline your life by identifying the essential and eliminating the unnecessary. By focusing on the essential and allowing everything else to drop away you will become less stressed and more productive.
-
-1. Identify the essential
-2. Eliminate the rest
-
-> Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.
-> — Antoine de Saint-Exupery
+Help us make [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, please read our [contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md) guidelines to better understand the nature and the direction of the project. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, feature requests and submitting pull requests.
 
 ## LICENSE
 
