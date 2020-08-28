@@ -1,6 +1,6 @@
 # [Essentials](https://jacobxperez.github.io/essentials/)
 
-Composable Design System — Built with [LESS](http://lesscss.org/)
+Composable Design System — Assemble with [LESS](http://lesscss.org/)
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ Composable Design System — Built with [LESS](http://lesscss.org/)
 
 ### Project Status
 
-This project is under active development and there is **NO** stable version as of today. Pleas read our [contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md) guidelines if you wish to further the development of [Essentials](https://jacobxperez.github.io/essentials/).
+This project is under active development and there is **NO** stable version as of today. Pleas read our [contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md) guidelines if you wish to further the development of [Essentials](https://jacobxperez.github.io/essentials/), any contribution will be considered.
 
 ## Getting Started
 
@@ -44,7 +44,10 @@ Adjust the [variables](https://github.com/jacobxperez/essentials/blob/master/css
 
 ### [Contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md)
 
-Help us make [Essentials](https://jacobxperez.github.io/essentials/) better for everyone, please read our [contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md) guidelines to better understand the nature and the direction of the project. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for bug reports, feature requests and submitting pull requests.
+If your interested in contributing to this project please start by reading our
+[contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md)
+guidelines to better understand the nature and the direction of the project, any
+contribution will be considered.
 
 ## LICENSE
 
