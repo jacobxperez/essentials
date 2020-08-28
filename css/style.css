@@ -734,6 +734,24 @@ body > .container:last-child {
     background-color: #b30000;
 }
 
+body,
+html {
+    height: 100%;
+}
+
+.section-master {
+    height: 100%;
+}
+
+.section-master .section-content {
+    margin-top: 15vh;
+}
+
+.section-master .section-title {
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+
 .section-header {
     padding-top: 6rem;
     padding-bottom: 1.5rem;
@@ -1792,6 +1810,10 @@ body > .container:last-child {
 
 .flex-grow {
     flex-grow: 1;
+}
+
+.content-center {
+    justify-content: center;
 }
 
 .transparent {
