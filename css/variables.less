@@ -19,7 +19,7 @@
 // @secondary: #222;
 // @secondary-fg: #fff;
 
-// // actions
+// actions
 // @success: #393;
 // @success-fg: #fff;
 
@@ -96,10 +96,10 @@
 // @wrapper-gap: 20px;
 
 // min width
-// @wrapper-min-width: 280px;
+// @wrapper-min-width: (280px + (@wrapper-gap * 2));
 
 // max width
-// @wrapper-max-width: 940px;
+// @wrapper-max-width: (940px + (@wrapper-gap * 2));
 
 
 // Grid System
@@ -130,21 +130,12 @@
 // @large-prefix: lg-;
 
 
-// Breakpoints
-// ----------------------------------------------------------------------------/
-// small screen
-// @viewport-small-max-width: (640px + (@wrapper-gap * 2));
-
-// medium screen: starts after small max and end before large min
-// @viewport-medium-min-width: (@viewport-small-max-width + 1 / @base-font-size);
-// @viewport-medium-max-width: (@viewport-large-min-width - 1 / @base-font-size);
-
-// large screens
-// @viewport-large-min-width: (940px + (@wrapper-gap * 2));
-
-
 // Base Box Model
 // ----------------------------------------------------------------------------/
+// margins
+// @base-margin-y: 10px;
+// @base-margin-x: 10px;
+
 // paddings
 // @base-padding-y: 8px;
 // @base-padding-x: 12px;
@@ -160,6 +151,14 @@
 // ----------------------------------------------------------------------------/
 // @list-indent: @indent; // padding left
 // @list-style-position: outside;
+
+// order list
+// @ol-list-style-type: decimal;
+// @ol-list-style-type-sub: hebrew;
+
+// unorder list
+// @ul-list-style-type: disc;
+// @ul-list-style-type-sub: circle;
 
 
 // hr
@@ -260,3 +259,16 @@
 // ----------------------------------------------------------------------------/
 // @selection-background: #cde1ff;
 // @selection-color: #000;
+
+
+// Breakpoints
+// ----------------------------------------------------------------------------/
+// small screen
+// @breakpoint-small-max-width: (640px + (@wrapper-gap * 2));
+
+// medium screen: starts after small-max and end before large-min
+// @breakpoint-medium-min-width: (@breakpoint-small-max-width + 1 / @base-font-size);
+// @breakpoint-medium-max-width: (@breakpoint-large-min-width - 1 / @base-font-size);
+
+// large screens
+// @breakpoint-large-min-width: (@wrapper-max-width + (@wrapper-gap * 2));

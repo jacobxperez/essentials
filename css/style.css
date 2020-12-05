@@ -733,36 +733,6 @@ body > .container:last-child {
 .button.danger-bg:hover {
     background-color: #b30000;
 }
-
-body,
-html {
-    height: 100%;
-}
-
-.section-master {
-    height: 100%;
-}
-
-.section-master .section-content {
-    margin-top: 15vh;
-}
-
-.section-master .section-title {
-    margin-bottom: 0;
-    font-size: 4rem;
-}
-
-.section-header {
-    padding-top: 6rem;
-    padding-bottom: 1.5rem;
-    background-color: #272727;
-    margin-bottom: 1.5rem;
-    border-bottom: .0625rem solid rgba(0, 0, 0, 0.3);
-}
-
-.secondary-bg .link {
-    color: #999;
-}
 @font-face {
     font-family: 'icons';
     src: url("../fonts/icons/icons.eot");
@@ -1892,4 +1862,34 @@ html {
         margin: 0;
         padding: 0;
     }
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.section-master {
+    height: 100%;
+}
+
+.section-master .section-content {
+    margin-top: 15vh;
+}
+
+.section-master .section-title {
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+
+.section-header {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+    background-color: #272727;
+    margin-bottom: 1.5rem;
+    border-bottom: .0625rem solid rgba(0, 0, 0, 0.3);
+}
+
+.secondary-bg .link {
+    color: #999;
 }
