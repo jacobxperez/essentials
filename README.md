@@ -1,6 +1,6 @@
 # [Essentials](https://jacobxperez.github.io/essentials/)
 
-Composable Design System — Assemble with [LESS](http://lesscss.org/)
+Composable Front-end Framework — Built with [LESS](http://lesscss.org/)
 
 ## Table of Contents
 
@@ -8,13 +8,14 @@ Composable Design System — Assemble with [LESS](http://lesscss.org/)
 * [Getting Started](#getting-started)
     * [Default Build](#default-build)
     * [Custom Build](#custom-build)
+    * [Examples](#examples)
     * [Contributing](#contributing)
 * [LICENSE](#license)
 
 ## About
 
 [Essentials](https://jacobxperez.github.io/essentials/) is a composable front-end framework
-for small scale websites.
+for web development.
 
 ## Getting Started
 
@@ -25,6 +26,8 @@ Start by **[downloading](https://github.com/jacobxperez/essentials/archive/maste
 ### Default Build
 
 The easiest way to include [Essentials](https://jacobxperez.github.io/essentials/) in your projects is by copying the pre-compiled [CSS](https://github.com/jacobxperez/essentials/blob/master/css/style.css) file into your project folder and then link to it in HTML.
+
+    <link rel="stylesheet" href="css/style.css">
 
 * [/css](https://github.com/jacobxperez/essentials/tree/master/css)
     * [style.css](https://github.com/jacobxperez/essentials/blob/master/css/style.css)
@@ -37,6 +40,15 @@ Adjust the [variables](https://github.com/jacobxperez/essentials/blob/master/css
     * [custom.less](https://github.com/jacobxperez/essentials/blob/master/css/custom.less) (write custom modules)
     * [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) (compile everything together)
     * [variables.less](https://github.com/jacobxperez/essentials/blob/master/css/variables.less) (adjust the settings)
+
+### Examples
+This examples incorporate the framework with custom components and layouts.
+
+* **[Company](https://github.com/jacobxperez/company)**:
+A single page website template for your company marketing.
+
+* **[Vaporwave Aesthetic](https://github.com/jacobxperez/vaporwave-aesthetic)**:
+A template with vaporwave aesthetics.
 
 ### [Contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md)
 
