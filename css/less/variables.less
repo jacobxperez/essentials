@@ -4,7 +4,7 @@
 // ----------------------------------------------------------------------------/
 
 
-// Color Palette
+// Main Color Palette
 // ----------------------------------------------------------------------------/
 // page background color
 // @background-color: #fff;
@@ -21,23 +21,6 @@
 // @secondary-text: contrast(@secondary);
 // @secondary-hover: darken(@secondary, 5%);
 
-// actions
-// @success: #393;
-// @success-text: contrast(@success);
-// @success-hover: darken(@success, 5%);
-
-// @warning: #fa0;
-// @warning-text: contrast(@warning);
-// @warning-hover: darken(@warning, 5%);
-
-// @danger: #c00;
-// @danger-text: contrast(@danger);
-// @danger-hover: darken(@danger, 5%);
-
-// disabled
-// @disabled: #e6e6e6;
-// @disabled-text: lighten(contrast(@disabled), 60%);
-
 
 // Typography
 // for more font family Variables check out:
@@ -45,6 +28,7 @@
 // ----------------------------------------------------------------------------/
 // base font family
 // @base-font-family: @font-sans;
+// @clamp-font-size: clamp(1rem, 1vw, 1.5rem); // can be set to false
 
 // font size
 // @base-font-size: 16px;
@@ -100,9 +84,6 @@
 // @hr-border-width: @base-border-width; // can be set to false
 // @hr-border-style: @base-border-style;
 // @hr-border-color: @base-border-color;
-
-// indentation
-// @indent: @base-line-height;
 
 
 // Page Wrapper
@@ -179,7 +160,7 @@
 
 // List ul, li, dl
 // ----------------------------------------------------------------------------/
-// @list-indent: @indent; // padding left
+// @list-indent: @base-line-height; // padding left
 // @list-style-position: outside;
 
 // order list
@@ -272,6 +253,25 @@
 // @button-disabled-border-color: #ddd;
 
 
+// Call to Action Colors
+// ----------------------------------------------------------------------------/
+// @success: #393;
+// @success-text: contrast(@success);
+// @success-hover: darken(@success, 5%);
+
+// @warning: #fa0;
+// @warning-text: contrast(@warning);
+// @warning-hover: darken(@warning, 5%);
+
+// @danger: #c00;
+// @danger-text: contrast(@danger);
+// @danger-hover: darken(@danger, 5%);
+
+// disabled
+// @disabled: #e6e6e6;
+// @disabled-text: lighten(contrast(@disabled), 60%);
+
+
 // Ghost Box
 // ----------------------------------------------------------------------------/
 // @ghost-box-min-width: 160px;
@@ -279,7 +279,7 @@
 
 // Iconography
 // ----------------------------------------------------------------------------/
-// @icon-class: icon;
+// @icon-class: icon-;
 // @icon-font-name: "icons";
 // @icon-font-path: "../fonts/icons/";
 

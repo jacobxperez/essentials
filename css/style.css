@@ -39,6 +39,7 @@ summary {
 
 html {
     font-size: 100%;
+    font-size: clamp(1rem, 1vw, 1.5rem);
 }
 
 body {
@@ -113,6 +114,7 @@ mark {
     color: #000000;
 }
 
+.small,
 small,
 sub,
 sup {
@@ -611,27 +613,27 @@ body > .container:last-child {
     border: .0625rem solid rgba(0, 0, 0, 0.3);
 }
 
-.primary-outline {
+.outline-primary {
     border-color: #06f;
     color: #06f;
 }
 
-.secondary-outline {
+.outline-secondary {
     border-color: #222;
     color: #222;
 }
 
-.success-outline {
+.outline-success {
     border-color: #393;
     color: #393;
 }
 
-.warning-outline {
+.outline-warning {
     border-color: #fa0;
     color: #fa0;
 }
 
-.danger-outline {
+.outline-danger {
     border-color: #c00;
     color: #c00;
 }
@@ -640,41 +642,38 @@ body > .container:last-child {
     background-color: #fff;
 }
 
-.button.primary-outline.active,
-.button.primary-outline:active,
-.button.primary-outline:hover,
+.button.outline-primary.active,
+.button.outline-primary:active,
+.button.outline-primary:hover,
 .primary-bg {
     background-color: #06f;
     color: #ffffff;
 }
 
-.button.secondary-outline.active,
-.button.secondary-outline:active,
-.button.secondary-outline:hover,
+.button.outline-secondary.active,
+.button.outline-secondary:active,
+.button.outline-secondary:hover,
 .secondary-bg {
     background-color: #222;
     color: #ffffff;
 }
 
-.button.success-outline.active,
-.button.success-outline:active,
-.button.success-outline:hover,
+.button.outline-success.active,
+.button.outline-success:active,
+.button.outline-success:hover,
 .success-bg {
     background-color: #393;
     color: #ffffff;
 }
 
-.button.warning-outline.active,
-.button.warning-outline:active,
-.button.warning-outline:hover,
 .warning-bg {
     background-color: #fa0;
     color: #000000;
 }
 
-.button.danger-outline.active,
-.button.danger-outline:active,
-.button.danger-outline:hover,
+.button.outline-danger.active,
+.button.outline-danger:active,
+.button.outline-danger:hover,
 .danger-bg {
     background-color: #c00;
     color: #ffffff;
@@ -1669,7 +1668,10 @@ body > .container:last-child {
 
 .block {
     display: block;
-    width: 100%;
+}
+
+.max-width {
+    max-width: 100%;
 }
 
 .float-left {
@@ -1704,8 +1706,8 @@ body > .container:last-child {
     top: 0;
 }
 
-.fixed-bottom {
-    bottom: 0;
+.fixed-top + .container {
+    margin-top: 6rem;
 }
 
 .fixed-top .container > ul {
@@ -1713,8 +1715,8 @@ body > .container:last-child {
     margin-right: -0.75rem;
 }
 
-.fixed-top + .container {
-    margin-top: 6rem;
+.fixed-bottom {
+    bottom: 0;
 }
 
 .top {
@@ -1731,19 +1733,6 @@ body > .container:last-child {
 
 .right {
     right: 0;
-}
-
-.indent {
-    padding-left: 1.5rem;
-}
-
-.text-indent {
-    text-indent: 1.5rem;
-}
-
-.text-outdent {
-    padding-left: 1.5rem;
-    text-indent: -1.5rem;
 }
 
 .text-left {
@@ -1768,12 +1757,56 @@ body > .container:last-child {
     flex-wrap: wrap;
 }
 
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
 .flex-column {
     flex-direction: column;
 }
 
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
 .flex-grow {
     flex-grow: 1;
+}
+
+.align-start {
+    align-self: flex-start;
+}
+
+.align-end {
+    align-self: flex-end;
+}
+
+.align-center {
+    align-self: center;
+}
+
+.align-baseline {
+    align-self: baseline;
+}
+
+.align-stretch {
+    align-self: stretch;
+}
+
+.self-start {
+    justify-self: start;
+}
+
+.self-end {
+    justify-self: end;
+}
+
+.self-center {
+    justify-self: center;
+}
+
+.self-stretch {
+    justify-self: stretch;
 }
 
 .content-start {
