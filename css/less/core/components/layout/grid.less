@@ -5,14 +5,11 @@
     .column-gap(@grid-column-gap);
 }
 
-
 // Grid Generator
 .grid(@large-columns; @grid-column-class);
 
-
 // Small Grid
-// ----------------------------------------------------------------------------/
-@media screen and (max-width: unit((@screen-small-max-width / @root-font-size), em)) {
+.small-grid () {
     .@{grid-wrapper-class} {
         grid-template-columns: repeat(@small-columns, 1fr);
     }
@@ -20,10 +17,8 @@
     .grid-responsive(@small-columns; @small-prefix);
 }
 
-
 // Medium Grid
-// ----------------------------------------------------------------------------/
-@media screen and (min-width: unit((@screen-medium-min-width / @root-font-size), em)) and (max-width: unit(((@screen-medium-max-width ) / @root-font-size), em))  {
+.medium-grid () {
     .@{grid-wrapper-class} {
         grid-template-columns: repeat(@medium-columns, 1fr);
     }
@@ -31,10 +26,8 @@
     .grid-responsive(@medium-columns; @medium-prefix);
 }
 
-
 // Large Grid
-// ----------------------------------------------------------------------------/
-@media screen and (min-width: unit((@screen-large-min-width / @root-font-size), em)) {
+.large-grid () {
     .@{grid-wrapper-class} {
         grid-template-columns: repeat(@large-columns, 1fr);
     }

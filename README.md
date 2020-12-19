@@ -1,6 +1,6 @@
 # [Essentials](https://jacobxperez.github.io/essentials/)
 
-Composable Front-end Framework — Built with [LESS](http://lesscss.org/)
+Modular Front-end Framework for Web Designers — Built with [LESS](http://lesscss.org/)
 
 ## Table of Contents
 
@@ -14,8 +14,9 @@ Composable Front-end Framework — Built with [LESS](http://lesscss.org/)
 
 ## About
 
-[Essentials](https://jacobxperez.github.io/essentials/) is a composable front-end framework
-for web development.
+[Essentials](https://jacobxperez.github.io/essentials/) is a modular front-end framework
+for web designers. Unlike other monolith frameworks, Essentials provides a minimum
+set of components, yet allows for the creation of unique individual designs.
 
 ## Getting Started
 
@@ -34,7 +35,7 @@ The easiest way to include [Essentials](https://jacobxperez.github.io/essentials
 
 ### Custom Build
 
-Adjust the [variables](https://github.com/jacobxperez/essentials/blob/master/css/less/variables.less) and if needed, add [custom](https://github.com/jacobxperez/essentials/blob/master/css/less/custom.less) code then compile everything together in [style.less](https://github.com/jacobxperez/essentials/blob/master/css/less/style.less) to produce the final [CSS](https://github.com/jacobxperez/essentials/blob/master/css/style.css). Optional, comment out unwanted components from [style.less](https://github.com/jacobxperez/essentials/blob/master/css/less/style.less) then compile your project. Check out [Editors and Plugins](http://lesscss.org/tools/#editors-and-plugins) for compiling [LESS](http://lesscss.org/).
+Adjust the [variables](https://github.com/jacobxperez/essentials/blob/master/css/less/variables.less) and if needed, add [custom](https://github.com/jacobxperez/essentials/blob/master/css/less/custom.less) modules then compile everything together in [style.less](https://github.com/jacobxperez/essentials/blob/master/css/less/style.less) to produce the final [CSS](https://github.com/jacobxperez/essentials/blob/master/css/style.css). Optional, comment out unwanted components from [style.less](https://github.com/jacobxperez/essentials/blob/master/css/less/style.less) then compile your project. Check out [Editors and Plugins](http://lesscss.org/tools/#editors-and-plugins) for compiling [LESS](http://lesscss.org/).
 
 * [/css/less](https://github.com/jacobxperez/essentials/tree/master/css/less)
     * [custom.less](https://github.com/jacobxperez/essentials/blob/master/css/less/custom.less) (write custom modules)
@@ -53,9 +54,9 @@ A template with vaporwave aesthetics.
 ### [Contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md)
 
 If your interested in contributing to this project please start by reading our
-[contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md)
-guidelines to better understand the nature and the direction of the project, any
-contribution will be considered.
+[contributing guidelines](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md)
+to better understand the nature and the direction of the project, any contribution
+will be considered.
 
 ## LICENSE
 
