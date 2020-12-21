@@ -10,50 +10,59 @@
 @import "modules/sections.less";
 
 
-// Grid Areas
-// Use this template to build your own grid
+// Grid Areas: Use this template to build your own custom grid
 // ----------------------------------------------------------------------------/
-// .@{wrapper-class} {
-//     grid-template-columns: repeat(3, 1fr);
+// .grid {
+//     display: grid;
+//     grid-gap: 1.25em;
+//     grid-template-columns: repeat(4, 1fr);
 //     grid-template-areas:
-//         "header header header"
-//         "sidebar main main"
-//         "footer footer footer";
+//         "a a a a"
+//         "b c c c"
+//         "d d d d";
 // }
 //
 // header {
-//     grid-area: header;
-// }
-//
-// main {
-//     grid-column: main;
+//     grid-area: a;
 // }
 //
 // aside {
-//     grid-row: sidebar;
+//     grid-area: b;
+// }
+//
+// article {
+//     grid-area: c;
 // }
 //
 // footer {
-//     grid-column: footer;
+//     grid-area: d;
 // }
 
 
 // Small Breakpoint
 // ----------------------------------------------------------------------------/
-// @media screen and (max-width: unit((@screen-small-max-width / @root-font-size), em)) {
-//     // Add code
-// }
+.small-screen () {
+    // Add code or import styles for small screens
+
+    // .grid {
+    //     grid-template-areas:
+    //         "a a a a"
+    //         "b b b b"
+    //         "c c c c"
+    //         "d d d d";
+    // }
+}
 
 
 // Medium Breakpoint
 // ----------------------------------------------------------------------------/
-// @media screen and (min-width: unit((@screen-medium-min-width / @root-font-size), em)) and (max-width: unit(((@screen-medium-max-width ) / @root-font-size), em))  {
-//     // Add code
-// }
+.medium-screen () {
+    // Add code or import styles for medium screens
+}
 
 
 // Large Breakpoint
 // ----------------------------------------------------------------------------/
-// @media screen and (min-width: unit((@screen-large-min-width / @root-font-size), em)) {
-//     // Add code
-// }
+.large-screen () {
+    // Add code or import styles for large screens
+}
