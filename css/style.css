@@ -2,7 +2,8 @@
  * Copyright (C) 2020 Jacob Perez <jacobxperez@gmx.com>
  * Licensed under the Apache License, Version 2.0
  * http://www.apache.org/licenses/LICENSE-2.0
-------------------------------------------------------------------------------*/
+==============================================================================*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -206,7 +207,6 @@ q {
 blockquote {
     font-size: 2rem;
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", "Liberation Serif", FreeSerif, serif;
-    line-height: 1.5;
     font-style: italic;
 }
 
@@ -514,6 +514,29 @@ body > .container:last-child {
     color: #ffffff;
 }
 
+.tertiary-bg {
+    background-color: #222;
+    color: #ffffff;
+}
+
+.button.primary-bg.active,
+.button.primary-bg:active,
+.button.primary-bg:hover {
+    background-color: #005ce6;
+}
+
+.button.secondary-bg.active,
+.button.secondary-bg:active,
+.button.secondary-bg:hover {
+    background-color: #151515;
+}
+
+.button.tertiary-bg.active,
+.button.tertiary-bg:active,
+.button.tertiary-bg:hover {
+    background-color: #151515;
+}
+
 .button.border-success.active,
 .button.border-success:active,
 .button.border-success:hover,
@@ -533,18 +556,6 @@ body > .container:last-child {
 .danger-bg {
     background-color: #c00;
     color: #ffffff;
-}
-
-.button.primary-bg.active,
-.button.primary-bg:active,
-.button.primary-bg:hover {
-    background-color: #005ce6;
-}
-
-.button.secondary-bg.active,
-.button.secondary-bg:active,
-.button.secondary-bg:hover {
-    background-color: #151515;
 }
 
 .button.success-bg.active,
