@@ -21,35 +21,33 @@
 }
 
 
-// Primary border
+// Borders Colors
+// ----------------------------------------------------------------------------/
 .border-primary{
     border-color: @primary;
     color: @primary;
 }
 
-
-// Secondary border
 .border-secondary{
     border-color: @secondary;
     color: @secondary;
 }
 
+.border-tertiary{
+    border-color: @tertiary;
+    color: @tertiary;
+}
 
-// Success border
 .border-success{
     border-color: @success;
     color: @success;
 }
 
-
-// Warning border
 .border-warning{
     border-color: @warning;
     color: @warning;
 }
 
-
-// Danger border
 .border-danger{
     border-color: @danger;
     color: @danger;
@@ -58,7 +56,7 @@
 
 // Button borders
 // ----------------------------------------------------------------------------/
-.@{button-class}.border-primary{
+.button.border-primary{
     &.active,
     &:hover,
     &:active {
@@ -67,7 +65,7 @@
 }
 
 
-.@{button-class}.border-secondary{
+.button.border-secondary{
     &.active,
     &:hover,
     &:active {
@@ -75,7 +73,15 @@
     }
 }
 
-.@{button-class}.border-success{
+.button.border-tertiary{
+    &.active,
+    &:hover,
+    &:active {
+        &:extend(.tertiary-bg);
+    }
+}
+
+.button.border-success{
     &.active,
     &:hover,
     &:active {
@@ -83,15 +89,15 @@
     }
 }
 
-.@{button-class}.border-warning{
+.button.border-warning{
     &.active,
     &:hover,
     &:active {
-        &:extend(.border-warning-bg);
+        &:extend(.warning-bg);
     }
 }
 
-.@{button-class}.border-danger{
+.button.border-danger{
     &.active,
     &:hover,
     &:active {

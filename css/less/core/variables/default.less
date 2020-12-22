@@ -4,10 +4,10 @@
 
 // Main Color Palette
 // ----------------------------------------------------------------------------/
-// page background color
+// background color
 @background-color: #fff;
 
-// base font color
+// font color
 @font-color: #555;
 
 // branding
@@ -15,7 +15,7 @@
 @primary-text: contrast(@primary);
 @primary-hover: darken(@primary, 5%);
 
-@secondary: #222;
+@secondary: #663380;
 @secondary-text: contrast(@secondary);
 @secondary-hover: darken(@secondary, 5%);
 
@@ -32,7 +32,7 @@
 // font size
 @root-font-size: 16px; // not in custom variables
 @base-font-size: 16px;
-@scale-font-size: clamp(1rem, 1vw, 1.25rem); // can be set to false
+@scale-font-size: clamp(1rem, 1vw, 1.25rem);
 
 // type scale
 @type-scale: 1.25;
@@ -87,25 +87,25 @@
 @hr-border-color: @base-border-color;
 
 
-// Page Wrapper
+// Page Container
 // ----------------------------------------------------------------------------/
-@wrapper-class: container;
-@wrapper-margin-top: @base-line-height * 2;
-@wrapper-margin-bottom: @base-line-height * 4;
-@wrapper-gap: 20px;
+@container-margin-top: @base-line-height * 2;
+@container-margin-bottom: @base-line-height * 4;
+@container-gap: 20px;
 
 // min width
-@wrapper-min-width: (280px + (@wrapper-gap * 2));
+@container-min-width: (280px + (@container-gap * 2));
 
 // max width
-@wrapper-max-width: (940px + (@wrapper-gap * 2));
+@container-max-width: (940px + (@container-gap * 2));
 
 
 // Grid System
 // ----------------------------------------------------------------------------/
 @grid-wrapper-class: grid;
 @grid-column-class: span-;
-@grid-column-gap: @wrapper-gap;
+@grid-column-gap: @container-gap;
+@grid-row-gap: false;
 
 // small grid
 @small-columns: 4;
@@ -132,21 +132,21 @@
 // Breakpoints
 // ----------------------------------------------------------------------------/
 // small screen
-@screen-small-max-width: (640px + (@wrapper-gap * 2));
+@screen-small-max-width: (640px + (@container-gap * 2));
 
 // medium screen: starts after small-max and end before large-min
 @screen-medium-min-width: (@screen-small-max-width + 1 / @base-font-size);
 @screen-medium-max-width: (@screen-large-min-width - 1 / @base-font-size);
 
 // large screens
-@screen-large-min-width: (@wrapper-max-width);
+@screen-large-min-width: (@container-max-width);
 
 
 // Base Box Model
 // ----------------------------------------------------------------------------/
 // margins
-@base-margin-y: 10px;
-@base-margin-x: 10px;
+@base-margin-y: 20px;
+@base-margin-x: 20px;
 
 // paddings
 @base-padding-y: 8px;
@@ -205,7 +205,7 @@
 @form-background-color: false;
 @form-color: false;
 
-@form-border-width: @base-border-width; // can be set to false
+@form-border-width: @base-border-width;
 @form-border-style: @base-border-style;
 @form-border-color: @base-border-color;
 @form-border-color-focus: rgba(0, 0, 0, 0.5);
@@ -231,20 +231,15 @@
 
 // Button
 // ----------------------------------------------------------------------------/
-@button-class: button;
 @button-color: @font-color;
 
-@button-padding-y: @base-padding-y - @button-border-width;
+@button-padding-y: @base-padding-y;
 @button-padding-x: @base-padding-x;
 
-@button-border-width: @base-border-width; // can be set to false
+@button-border-width: false;
 @button-border-style: @base-border-style;
-@button-border-color: transparent;
+@button-border-color: @base-border-color;
 @button-border-radius: false;
-
-@button-disabled-color: @disabled-text;
-@button-disabled-background-color: @disabled;
-@button-disabled-border-color: #ddd;
 
 
 // Call to Action Colors
@@ -272,7 +267,6 @@
 
 // Iconography
 // ----------------------------------------------------------------------------/
-@icon-class: icon-;
 @icon-font-name: "icons";
 @icon-font-path: "../fonts/icons/";
 
