@@ -1559,11 +1559,12 @@ html {
     padding-top: 6rem;
     padding-bottom: 1.5rem;
     background-color: #272727;
+    color: #fff;
     margin-bottom: 1.5rem;
     border-bottom: .0625rem solid rgba(0, 0, 0, 0.3);
 }
 
-.tertiary-bg .link {
+.section-header .link {
     color: #999;
 }
 
