@@ -15,7 +15,7 @@
 @primary-text: contrast(@primary);
 @primary-hover: darken(@primary, 5%);
 
-@secondary: #663380;
+@secondary: #003789;
 @secondary-text: contrast(@secondary);
 @secondary-hover: darken(@secondary, 5%);
 
@@ -23,10 +23,13 @@
 @tertiary-text: contrast(@tertiary);
 @tertiary-hover: darken(@tertiary, 5%);
 
+// link
+@link-color: @primary;
+
 
 // Typography
 // ----------------------------------------------------------------------------/
-// base font family
+// font family
 @base-font-family: @font-sans;
 
 // font size
@@ -39,12 +42,6 @@
 
 // line height
 @base-line-height: 24px;
-
-// leading: margin bottom
-@base-leading: @base-line-height;
-
-// link
-@link-color: @primary;
 
 // headings
 @headings-font-family: false;
@@ -93,10 +90,10 @@
 @container-margin-bottom: @base-line-height * 4;
 @container-gap: 20px;
 
-// min width
+// min width 320px
 @container-min-width: (280px + (@container-gap * 2));
 
-// max width
+// max width 960px
 @container-max-width: (940px + (@container-gap * 2));
 
 
@@ -199,11 +196,11 @@
 
 // Form
 // ----------------------------------------------------------------------------/
-@form-padding-y: @base-padding-y;
-@form-padding-x: @base-padding-x;
-
 @form-background-color: false;
 @form-color: false;
+
+@form-padding-y: @base-padding-y;
+@form-padding-x: @base-padding-x;
 
 @form-border-width: @base-border-width;
 @form-border-style: @base-border-style;
@@ -260,16 +257,15 @@
 @disabled-text: lighten(contrast(@disabled), 60%);
 
 
-// Ghost Box
+// Drop Box
 // ----------------------------------------------------------------------------/
-@ghost-box-min-width: 160px;
+@drop-box-min-width: 160px;
 
 
 // Iconography
 // ----------------------------------------------------------------------------/
 @icon-font-name: "icons";
 @icon-font-path: "../fonts/icons/";
-
 @icon-font-size: @base-font-size;
 @icon-line-height: 10px;
 

@@ -6,19 +6,18 @@
 }
 
 
-// Ghost Box
+// Drop Box
 // ----------------------------------------------------------------------------/
-.ghost-box {
+.drop-box {
     display: none;
     width: 100%;
     margin-bottom: 0;
-    .min-width(@ghost-box-min-width);
-    visibility: hidden;
-    .transition();
+    .min-width(@drop-box-min-width);
+    background-color: @background-color;
+    color: @font-color;
 }
 
 // added by javascript
-.active + .ghost-box {
+.active + .drop-box {
     display: block;
-    visibility: visible;
 }
