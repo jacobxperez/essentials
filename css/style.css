@@ -63,22 +63,22 @@ h6 {
 
 .h1,
 h1 {
-    font-size: 3.125rem;
+    font-size: 2.625rem;
 }
 
 .h2,
 h2 {
-    font-size: 2.5rem;
+    font-size: 2.1875rem;
 }
 
 .h3,
 h3 {
-    font-size: 2rem;
+    font-size: 1.8125rem;
 }
 
 .h4,
 h4 {
-    font-size: 1.5625rem;
+    font-size: 1.5rem;
 }
 
 .h5,
@@ -93,7 +93,7 @@ h6 {
 
 b,
 strong {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 dfn,
@@ -118,7 +118,7 @@ mark {
 small,
 sub,
 sup {
-    font-size: .8125rem;
+    font-size: .75rem;
 }
 
 sub,
@@ -148,7 +148,7 @@ q {
 }
 
 blockquote {
-    font-size: 2rem;
+    font-size: 1.8125rem;
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", "Liberation Serif", FreeSerif, serif;
     font-style: italic;
 }
@@ -165,7 +165,6 @@ blockquote small:before {
 
 blockquote small {
     display: block;
-    line-height: 1.84615385;
 }
 
 code,
@@ -1851,6 +1850,35 @@ html {
         grid-column: span 8;
     }
 
+    .h1,
+    h1 {
+        font-size: 3.0625rem;
+    }
+
+    .h2,
+    h2 {
+        font-size: 2.5625rem;
+    }
+
+    .h3,
+    h3 {
+        font-size: 2.125rem;
+    }
+
+    .h4,
+    h4 {
+        font-size: 1.75rem;
+    }
+
+    .h5,
+    h5 {
+        font-size: 1.4375rem;
+    }
+
+    blockquote {
+        font-size: 2.125rem;
+    }
+
     .lg-block,
     .md-none,
     .sm-block {
@@ -1908,6 +1936,35 @@ html {
 
     .lg-span-12 {
         grid-column: span 12;
+    }
+
+    .h1,
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .h2,
+    h2 {
+        font-size: 2.9375rem;
+    }
+
+    .h3,
+    h3 {
+        font-size: 2.4375rem;
+    }
+
+    .h4,
+    h4 {
+        font-size: 2rem;
+    }
+
+    .h5,
+    h5 {
+        font-size: 1.625rem;
+    }
+
+    blockquote {
+        font-size: 2.4375rem;
     }
 
     .lg-none,
