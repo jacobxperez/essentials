@@ -1852,12 +1852,12 @@ html {
 
     .h1,
     h1 {
-        font-size: 3.0625rem;
+        font-size: 3.125rem;
     }
 
     .h2,
     h2 {
-        font-size: 2.5625rem;
+        font-size: 2.625rem;
     }
 
     .h3,
@@ -1867,7 +1867,7 @@ html {
 
     .h4,
     h4 {
-        font-size: 1.75rem;
+        font-size: 1.8125rem;
     }
 
     .h5,
@@ -1876,7 +1876,7 @@ html {
     }
 
     blockquote {
-        font-size: 2.125rem;
+        font-size: 2.625rem;
     }
 
     .lg-block,
@@ -1940,7 +1940,7 @@ html {
 
     .h1,
     h1 {
-        font-size: 3.5rem;
+        font-size: 3.5625rem;
     }
 
     .h2,
@@ -1955,7 +1955,7 @@ html {
 
     .h4,
     h4 {
-        font-size: 2rem;
+        font-size: 2.0625rem;
     }
 
     .h5,
@@ -1964,7 +1964,7 @@ html {
     }
 
     blockquote {
-        font-size: 2.4375rem;
+        font-size: 2.9375rem;
     }
 
     .lg-none,
