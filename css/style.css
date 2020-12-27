@@ -148,7 +148,6 @@ q {
 }
 
 blockquote {
-    font-size: 1.8125rem;
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", "Liberation Serif", FreeSerif, serif;
     font-style: italic;
 }
@@ -1814,6 +1813,31 @@ html {
     }
 }
 @media screen and (min-width: 42.50390625em) and (max-width: 61.24609375em) {
+    .h1,
+    h1 {
+        font-size: 3.125rem;
+    }
+
+    .h2,
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .h3,
+    h3 {
+        font-size: 2rem;
+    }
+
+    .h4,
+    h4 {
+        font-size: 1.5625rem;
+    }
+
+    .h5,
+    h5 {
+        font-size: 1.25rem;
+    }
+
     .grid {
         grid-template-columns: repeat(8, 1fr);
     }
@@ -1850,35 +1874,6 @@ html {
         grid-column: span 8;
     }
 
-    .h1,
-    h1 {
-        font-size: 3.125rem;
-    }
-
-    .h2,
-    h2 {
-        font-size: 2.625rem;
-    }
-
-    .h3,
-    h3 {
-        font-size: 2.125rem;
-    }
-
-    .h4,
-    h4 {
-        font-size: 1.8125rem;
-    }
-
-    .h5,
-    h5 {
-        font-size: 1.4375rem;
-    }
-
-    blockquote {
-        font-size: 2.625rem;
-    }
-
     .lg-block,
     .md-none,
     .sm-block {
@@ -1886,6 +1881,31 @@ html {
     }
 }
 @media screen and (min-width: 61.25em) {
+    .h1,
+    h1 {
+        font-size: 4rem;
+    }
+
+    .h2,
+    h2 {
+        font-size: 3.0625rem;
+    }
+
+    .h3,
+    h3 {
+        font-size: 2.3125rem;
+    }
+
+    .h4,
+    h4 {
+        font-size: 1.75rem;
+    }
+
+    .h5,
+    h5 {
+        font-size: 1.3125rem;
+    }
+
     .grid {
         grid-template-columns: repeat(12, 1fr);
     }
@@ -1936,35 +1956,6 @@ html {
 
     .lg-span-12 {
         grid-column: span 12;
-    }
-
-    .h1,
-    h1 {
-        font-size: 3.5625rem;
-    }
-
-    .h2,
-    h2 {
-        font-size: 2.9375rem;
-    }
-
-    .h3,
-    h3 {
-        font-size: 2.4375rem;
-    }
-
-    .h4,
-    h4 {
-        font-size: 2.0625rem;
-    }
-
-    .h5,
-    h5 {
-        font-size: 1.625rem;
-    }
-
-    blockquote {
-        font-size: 2.9375rem;
     }
 
     .lg-none,
