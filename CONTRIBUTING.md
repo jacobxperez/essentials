@@ -1,6 +1,10 @@
 # Contributing
 
-Welcome designers, before you contribute to this project is important to read the following sections to better understand the vision and the direction of the project. Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for [bug reports](#bug-reports), [feature requests](#feature-requests), and submitting [pull requests](#pull-requests).
+Welcome designers, before you contribute to this project is important to read the
+following sections to better understand the vision and the direction of the project.
+Use the [issue tracker](https://github.com/jacobxperez/essentials/issues) for
+[bug reports](#bug-reports), [feature requests](#feature-requests), and submitting
+[pull requests](#pull-requests).
 
 ## Table of Contents
 
@@ -20,10 +24,10 @@ forefront. The product becomes useful, understandable, easy to use, and long-las
 
 ## Design Principles
 
-In the book The Power of Less, author Leo Babauta demonstrates how to streamline
-your life by identifying the essential and eliminating the unnecessary. By focusing
-on the essential and allowing everything else to drop away you will become less
-stressed and more productive.
+In The Power of Less, author [Leo Babauta](https://leobabauta.com/) demonstrates
+how to streamline your life by identifying the essential and eliminating the
+unnecessary. By focusing on the essential and allowing everything else to drop
+away you will become less stressed and more productive.
 
 1. Identify the essential
 2. Eliminate the rest

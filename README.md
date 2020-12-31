@@ -1,6 +1,6 @@
 # [Essentials](https://jacobxperez.github.io/essentials/)
 
-Modular Front-end Framework for Web Designers — Built with [LESS](http://lesscss.org/)
+Minimal Front-end Framework for Web Designers — Built with [LESS](http://lesscss.org/)
 
 ## Table of Contents
 
@@ -14,9 +14,10 @@ Modular Front-end Framework for Web Designers — Built with [LESS](http://lessc
 
 ## About
 
-[Essentials](https://jacobxperez.github.io/essentials/) is a modular front-end framework
-for web designers. Unlike other monolith frameworks, Essentials provides a minimum
-set of components, yet allows for the creation of unique individual designs.
+Unlike other monolith frameworks, [Essentials](https://jacobxperez.github.io/essentials/)
+provides a minimum set of components that by combining them together allows for
+the creation of unique individual designs. By removing the unnecessary the essential
+comes to the light, thus leaving room for the designer self-expression.
 
 ## Getting Started
 
@@ -26,7 +27,10 @@ Start by **[downloading](https://github.com/jacobxperez/essentials/archive/maste
 
 ### Default Build
 
-The easiest way to include [Essentials](https://jacobxperez.github.io/essentials/) in your projects is by copying the pre-compiled [CSS](https://github.com/jacobxperez/essentials/blob/master/css/style.css) file into your project folder and then link to it in HTML.
+The easiest way to include [Essentials](https://jacobxperez.github.io/essentials/)
+in your projects is by copying the pre-compiled
+[CSS](https://github.com/jacobxperez/essentials/blob/master/css/style.css)
+file into your project folder and then link to it in HTML.
 
     <link rel="stylesheet" href="css/style.css">
 

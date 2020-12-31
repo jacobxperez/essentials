@@ -1,68 +1,33 @@
-// Quick Settings: Move edited variables here
+// Quick Settings
 // ----------------------------------------------------------------------------/
-// @primary: #06f;
-// @font-color: #555;
+// @background-color: #fff;
 // @base-font-size: 16px;
+// @font-color: #555;
+// @primary: #06f;
 
 
 // Import custom modules or start writing them here
 // ----------------------------------------------------------------------------/
+@import "modules/grid.less";
 @import "modules/sections.less";
-
-
-// Grid Areas: Use this template to build your own custom grid
-// ----------------------------------------------------------------------------/
-// .grid {
-//     display: grid;
-//     grid-gap: 1.25em;
-//     grid-template-columns: repeat(4, 1fr);
-//     grid-template-areas:
-//         "a a a a"
-//         "b c c c"
-//         "d d d d";
-// }
-//
-// header {
-//     grid-area: a;
-// }
-//
-// aside {
-//     grid-area: b;
-// }
-//
-// article {
-//     grid-area: c;
-// }
-//
-// footer {
-//     grid-area: d;
-// }
 
 
 // Small Breakpoint
 // ----------------------------------------------------------------------------/
-.small-screen () {
-    // Add code or import styles for small screens
-
-    // .grid {
-    //     grid-template-areas:
-    //         "a a a a"
-    //         "b b b b"
-    //         "c c c c"
-    //         "d d d d";
-    // }
-}
+// @media screen and (max-width: unit((@screen-small-max-width / 16px), em)) {
+//     // Add code for small screens
+// }
 
 
 // Medium Breakpoint
 // ----------------------------------------------------------------------------/
-.medium-screen () {
-    // Add code or import styles for medium screens
-}
+// @media screen and (min-width: unit((@screen-medium-min-width / 16px), em)) and (max-width: unit(((@screen-medium-max-width ) / 16px), em)) {
+//     // Add code for medium screens
+// }
 
 
 // Large Breakpoint
 // ----------------------------------------------------------------------------/
-.large-screen () {
-    // Add code or import styles for large screens
-}
+// @media screen and (min-width: unit((@screen-large-min-width / 16px), em)) {
+//     // Add code for large screens
+// }
