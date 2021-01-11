@@ -74,9 +74,10 @@
                     <li>
                         <p><strong>Contents</strong></p>
                     </li>
-                    <li><a href="#navigation">Navigation</a></li>
                     <li><a href="#buttons">Buttons</a></li>
                     <li><a href="#dropdown">Dropdown</a></li>
+                    <li><a href="#navigation">Navigation</a></li>
+                    <li><a href="#utilities">Utilities</a></li>
                 </ul>
 
                 <!-- Dropdown Menu -->
@@ -86,9 +87,10 @@
                                     class="icon-down-open float-right"></span></strong></a>
 
                         <ul class="drop-box">
-                            <li><a class="nav-link" href="#navigation">Navigation</a></li>
                             <li><a class="nav-link" href="#buttons">Buttons</a></li>
                             <li><a class="nav-link" href="#dropdown">Dropdown</a></li>
+                            <li><a class="nav-link" href="#navigation">Navigation</a></li>
+                            <li><a class="nav-link" href="#utilities">Utilities</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -124,15 +126,45 @@
                         </div>
                     </div>
 
-                    <h3>Tooltip</h3>
+                    <div class="grid leading">
+                        <div class="relative">
+                            <a class="js-toggle">Dropdown <span class="icon-down-open"></span></a>
 
-                    <div class="leading">
-                        <span class="tooltip">Tooltip</span>
+                            <div class="drop-box absolute">
+                                Dropdown Contnet
+                            </div>
+                        </div>
 
-                        <div class="drop-box min-width absolute">
-                            Tooltip Contnet
+                        <div class="relative">
+                            <a class="js-toggle">Dropdown <span class="icon-up-open"></span></a>
+
+                            <div class="drop-box absolute top">
+                                Dropdown Contnet
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <a class="js-toggle">Dropdown <span class="icon-down-open"></span></a>
+
+                            <div class="drop-box absolute left">
+                                Dropdown Contnet
+                            </div>
+                        </div>
+
+                        <div class="relative">
+                            <a class="js-toggle">Dropdown <span class="icon-down-open"></span></a>
+
+                            <div class="drop-box absolute">
+                                Dropdown Contnet
+                            </div>
                         </div>
                     </div>
+
+                    <h3>Tooltip</h3>
+
+                    <p>
+                        <span class="tooltip">Tooltip <span class="drop-box absolute">Tooltip Contnet</span></span>
+                    </p>
                 </section>
             </article>
             <!-- end Content -->
