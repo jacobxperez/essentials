@@ -1,23 +1,15 @@
-// Box
-// ----------------------------------------------------------------------------/
-.box {
-    display: block;
-    .padding(@padding-y, @padding-x);
-}
-
-
-// Drop Box
+// Dropdown
 // ----------------------------------------------------------------------------/
 .drop-box {
     display: none;
-    width: 100%;
     margin-bottom: 0;
-    .min-width(@drop-box-min-width);
+    width: 100%;
     background-color: @background-color;
     color: @font-color;
 }
 
 // added by javascript
+.tooltip:hover + .drop-box,
 .active + .drop-box {
     display: block;
 }

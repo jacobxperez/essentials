@@ -34,7 +34,7 @@
 // main font
 @font-family: @font-sans;
 @font-size: 16px;
-@scale-font-size: false;
+@font-scale: false;
 @line-height: 24px;
 
 // headings
@@ -123,6 +123,9 @@
 
 // Box Model
 // ----------------------------------------------------------------------------/
+// width
+@min-width: 160px;
+
 // margins
 @margin-y: 20px;
 @margin-x: 20px;
@@ -137,7 +140,7 @@
 @border-radius: 4px;
 
 
-// List ul, li, dl
+// Lists
 // ----------------------------------------------------------------------------/
 // order list
 @ol-list-style-type: decimal;
@@ -223,11 +226,6 @@
 
 @disabled: #e6e6e6;
 @disabled-text: lighten(contrast(@disabled), 60%);
-
-
-// Drop Box
-// ----------------------------------------------------------------------------/
-@drop-box-min-width: 160px;
 
 
 // Iconography

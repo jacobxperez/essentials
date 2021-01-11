@@ -101,6 +101,7 @@ dfn {
     font-style: italic;
 }
 
+.tooltip,
 abbr[title],
 dfn[title] {
     text-decoration: underline;
@@ -290,6 +291,7 @@ select,
 .button {
     display: inline-block;
     padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    background-color: transparent;
     color: #555;
     cursor: pointer;
 }
@@ -360,10 +362,6 @@ table {
     padding-right: 1.25rem;
 }
 
-.max-width {
-    max-width: 100%;
-}
-
 body>.wrapper:first-child {
     margin-top: 3rem;
 }
@@ -406,20 +404,15 @@ body>.wrapper:last-child {
     margin-right: 0;
 }
 
-.box {
-    display: block;
-    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-}
-
 .drop-box {
     display: none;
-    width: 100%;
     margin-bottom: 0;
-    min-width: 10rem;
+    width: 100%;
     background-color: #fff;
     color: #555;
 }
 
+.tooltip:hover+.drop-box,
 .active+.drop-box {
     display: block;
 }
@@ -1536,6 +1529,19 @@ body {
     color: #999;
 }
 
+.box {
+    display: block;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+}
+
+.min-width {
+    max-width: 10rem;
+}
+
+.max-width {
+    max-width: 100%;
+}
+
 .inline {
     display: inline;
 }
@@ -1626,6 +1632,7 @@ body {
     hyphens: auto;
 }
 
+.tooltip,
 .relative {
     position: relative;
 }
